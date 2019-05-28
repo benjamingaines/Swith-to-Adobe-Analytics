@@ -1,4 +1,4 @@
-# How to Switch to Adobe Analytics
+# How to switch to Adobe Analytics
 
 GA to AA Structure
 
@@ -24,7 +24,7 @@ Overview.md
 
 ## Introduction
 
-Congratulations on the decision to switch to Adobe Analytics! You’ve taken your first step into a larger world. Although no two analytics tools are exactly the same, the leading web analytics tools (Adobe Analytics and Google Analytics, in particular) share enough common functionality that you can quickly learn to get meaningful insights into your business.
+Congratulations on the decision to switch to Adobe Analytics! You’ve taken your first step into a larger world. Although no two analytics tools are exactly the same, the leading web analytics tools (Adobe Analytics and Google Analytics) share enough common functionality that you can quickly learn how to get meaningful insights into your business.
 
 This guide presents three common report types that help you to learn core concepts and workflows in Adobe Analytics, focusing on key similarities and differences between Adobe and other popular tools. This guide is designed for analysts who are familiar with basic digital analytics concepts, but new to Adobe Analytics.
 
@@ -38,12 +38,12 @@ In this guide, you will learn:
 
 You can read and learn from this guide with no special requirements. However, to perform  steps shown in this guide yourself, you will need the following:
 
-1. Access to an existing, or demo, Adobe Analytics account
-1. A basic understanding of web analytics concepts such as page views, bounce rates, conversions, and funnels
+1. Access to an existing Adobe Analytics account, or a demo account
+1. A basic understanding of web analytics concepts, such as page views, bounce rates, conversions, and funnels
 1. Access to an instance of Analysis Workspace with sufficient privileges to create and share segments and calculated metrics
 1. Administrator or developer help, in some cases, to fully implement your Adobe Analytics account.
 
-## Get Started in Adobe Analytics
+## Get started in Adobe Analytics
 
 To get started in Adobe Analytics:
 
@@ -54,9 +54,9 @@ Make sure that your Analytics is fully implemented with web properties.
 1. [Navigate to Adobe Analytics](https://marketing.adobe.com/resources/help/en_US/analytics/getting-started/analytics-navigation.html) and Analysis Workspace.
 
 
-## Analytics Visual Tools
+## Analytics visual tools
 
-Adobe Analytics provides two different visual tools to analyze your business: Analysis Workspace and Reports and Analytics. In Analysis Workspace, you work with visualizations that correspond to reports in different tools. These visualizations show key metrics for your web business. The are not only more flexible and robust in displaying metrics, they are also easier to create and they can provide much more detail than traditional reports. You create visualizations by dragging and dropping data tables,dimensions, metrics, segments and time periods. You can also extend visualizations with right-click options. For more information on the features of Analysis Workspace visualizations, see the [Analysis Workspace Overview](https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/). Adobe's Reports and Analytics capabilities also correspond with report types in other tools. Both tools offer unique capabilities that go beyond simply measuring page traffic so that you can better understand how pages convert users. 
+Adobe Analytics provides two different visual tools to analyze your business: Analysis Workspace and Reports and Analytics. In Analysis Workspace, you work with visualizations that correspond to reports in different tools. These visualizations show key metrics for your web business. The visualizations are not only more flexible and robust in displaying metrics, they are also easier to create. They also provide much more detail than traditional reports. You create visualizations by dragging and dropping data tables,dimensions, metrics, segments and time periods on the Analysis Workspace user interface. You can also extend visualizations with right-click options. For more information on the features of Analysis Workspace visualizations, see the [Analysis Workspace Overview](https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/). Adobe's Reports and Analytics capabilities also correspond with report types in other tools. Both tools offer unique capabilities that go beyond simply measuring page traffic so that you can better understand how pages convert users. 
 
 ## Comparing Report Types
 
@@ -64,47 +64,36 @@ This guide describes how to
 
 
 
-### All Pages Report
+## All Pages Report
 
-You can construct both a report and a visualization in Analytics that is similar to an **All Pages Report** in other tools. Reporting on content performance is one of the fundamentals of web analytics. This section describes the following:
+You can construct either a report or a visualization in Analytics that is similar to an **All Pages Report** in other tools. Content performance is one of the fundamentals of web analytics, and this report provides that. This section describes the following:
 
-1. How to construct an All Pages Report with the Analytics report interface.
-1. How to construct a visualization in Analysis Workspace similar to the All Pages Report.
+1. How to construct an **Pages** Report with the Analytics report interface.
+1. How to construct a visualization in Analysis Workspace similar to an All Pages Report.
 
-Additionally, by creating these in Analytics, you see:
+Additionally, by creating these in Analytics, you learn:
+
 1. How to navigate the reporting interface to measure page traffic
-1. Key Adobe Analytics concepts, such as report suites, dimensions and metrics, calculated metrics, and participation
+1. Key Adobe Analytics concepts, such as report suites, dimensions and metrics
 1. How to quickly customize reports
 1. How the content on your pages contributes to conversion
 1. How to share your report with others
 
+### Construct a Pages report
+
+To construct this report: 
+
+1. In Adobe Analytics, click the **Reports** tab and then click **View All Reports**. Note the menu showing all the reports set up in your account. These menus, and the reports within them, are your reports suite and are customized to your specific Adobe Analytics implementation.
 
 
-#### Navigating the reporting interface
-
-The **Reports** interface in Analytics includes the following:
-
-1. Tabs for switching between reporting tools, at the top of the screen 
-1. A menu showing all the reports set up in your account. These menus, and the reports within them, are customized to your specific Adobe Analytics implementation.
+**Reports Tab Image Here**
 
 
-![4](./images/image4.png)
+2. Click **Content** > **Pages**. The **Pages** report appears and shows [dimensions] (https://marketing.adobe.com/resources/help/en_US/reference/dimensions.html), [metrics](https://marketing.adobe.com/resources/help/en_US/sc/implement/ref-metrics.html), and page names.
 
+**Pages Report Image Here**
 
-Key concepts: need to reference this.
-
-
-
-
-### Reports & Analytics Pages report
-
-The **Pages** report in Analytics is similar to the **All Pages Report** in other tools. 
-
-To open the **Pages** report, click the **Reports** tab and then click **View All Reports** > **Content** > **Pages**. You should see the names of the pages on the left and the number of views for each page on the right.
-
-![5](./images/image5.png)
-
-### Create a visualization in Analysis Workspace
+### Create a visualization for Pages
 
 Working in Analysis Workspace is an easier way to see all types of available dimensions and metrics. It functions similar to creating basic repors but greatly enhances the speed, flexibility, and customizability of visualizing and analyzing your data. In Analysis Workspace, the **Page Performance** visualization shows traffic metrics for the **Page** dimension.
 
