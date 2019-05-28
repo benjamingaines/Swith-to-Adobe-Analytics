@@ -139,22 +139,41 @@ The following section describes ways to customize your screen and visualizations
 
 **Project Title and menus image here**
 
-
-
 1. On the left side of the screen, note the **Component** toolbar, which contains groupings for **Dimensions**, **Metrics**, **Segments**, and **Time**. These components are all available to use in your visualizations. The **Dimensions** grouping is expandable into sub-components. Under **Dimensions**, click the **Page** arrow **>** that appears when you hover over it. The **Page Items** then appear as sub-components.
 
 **Page arrow image here**
 
-### Select Your Desired Date Range
+1. Select the date range for your visualization. Click the Date Range in the upper right of the screen to open the Date Picker. The range you select here applies to the entire panel in this Analysis Workspace project. This template defaults to the last month across all panels.
 
-The next most important thing: select the date range for your report.
+**Date Picker image here**
 
-Click into the Date Range to open the Date Picker. The date range that you select here will apply to the entire panel in this Analysis Workspace project. This template defaults to last month across all panels – let’s keep it that way.
 
-> **But wait, what is a Panel in Analysis Workspace?**<br><br>
-> A Panel is one of the layers in an Analysis Workspace project. Reports and Visualizations live within a Panel. Within a Project, you can have multiple Panels. The hierarchy goes Project > Panel > Visualization. It can be useful to keep visualizations in different panels when you have different date ranges to analyze, or when you have lots of visualizations that you want to organize. You can “collapse” panels and make it easier to scroll through the project, which comes in handy when you have lots of stuff going on.
+### About Panels
 
-### Make Sense of the Content Report
+A Panel is a collection of visualizations. You might have many visualizations that you want to group in different categories, but also keep in the same project. To do this, you can create multiple panels that  hold the visualizations that you move to them. For example, the Content Consumption template contains only one panel--called Content Consumption. 
+
+**Content Consumption panel image here**
+
+If you click the drop down arrow on the panel, it collapses to show other panels you have created (in this case, none). If you click the arrow again, it expands the panel to fully display on the screen. To add more panels, click **Insert** > **New Blank Panel** and choose the type of panel you want to add. For more information on panels, see the [Panels] (https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/panels.html) help.
+
+
+### Understanding Content Reports
+
+This section describes elements in the **Page Performance** visualization. Refer to the following image to understand the details of the report.
+
+**Pages report image here**
+
+This type of visualization is called a [Freeform Table] (https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/freeform-table.html). It shows traffic metrics for the Pages dimension, including the following:
+
+*[Page Views] (https://marketing.adobe.com/resources/help/en_US/reference/metrics_page_view.html)
+*[Visits] (https://marketing.adobe.com/resources/help/en_US/reference/metrics_visit.html)
+*[Time Spent per Visit] (https://marketing.adobe.com/resources/help/en_US/reference/metrics_time_spent.html)
+*[Entries] (https://marketing.adobe.com/resources/help/en_US/reference/metrics_entries.html)
+*[Bounce Rate] (https://marketing.adobe.com/resources/help/en_US/reference/metrics_bounce_rate.html)
+*[Exit Rate] (https://marketing.adobe.com/resources/help/en_US/reference/metrics_exits.html)
+
+For more metrics descriptions, see the [Metrics] (https://marketing.adobe.com/resources/help/en_US/reference/metrics.html) help.
+
 
 We've labeled the first panel in this workspace the Content Report. Within it, there is a table of data labeled “Page Performance.” This type of widget within the report is called a “Freeform Table.”
 
