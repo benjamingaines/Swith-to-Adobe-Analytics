@@ -109,9 +109,27 @@ To create a **Page Performance** visualization in Analysis Workspace:
 
 **Top Pages Visualization Image Here**
 
+### About Report Suites
+
+Note that your current screen is based on the report suite showing in the **Report Suite Selector**. Click on the selector to choose a different report suite or continue with the "Cross-Industry Matisoft Data" report suite that appears with the template. None of the report suites associated with the templates have real data.
+
+**Report Suite Selector image here**
+
+In Adobe Analytics, a report suite is the repository where you send your data and from which you pull reports. Usually, a report suite collects data from one website. This is similar to a **View** or a **Profile** in other analytics tools.
+
+Your organization may have different report suites set up for different sites and apps. Check with your administrator to understand where you should be pulling reports from.
+
+One key difference between Adobe's data collection method and many other tools is that you specify which report suite(s) to send data to when you send the data. This is different from other popular tools that typically send all your data to one collection location and then filter that down to create different views or profiles via the admin interface. You cannot shift data between report suites.
+
+You can also build [virtual report suites] (https://marketing.adobe.com/resources/help/en_US/reference/virtual-report-suites.html), which let you build filtered views from a normal report suite.
+
+For more information on report suites, see the [Report Suites Manager] (https://marketing.adobe.com/resources/help/en_US/reference/report_suites_admin.html) help.
 
 Customizing your project?
-The following section describes ways to customize your screen and visualizations. Note that your current screen is based on the report suite selected in the 
+
+
+The following section describes ways to customize your screen and visualizations. The typical screen actions associated with customizing your visualizations include dragging and dropping screen elements and right-clicking visualization items to select other options and actions. 
+
 
 1. To customize the name of this project, click the title in the uppper left of the screen and type the new name.
 
@@ -126,25 +144,6 @@ The following section describes ways to customize your screen and visualizations
 1. On the left side of the screen, note the **Component** toolbar, which contains groupings for **Dimensions**, **Metrics**, **Segments**, and **Time**. These components are all available to use in your visualizations. The **Dimensions** grouping is expandable into sub-components. Under **Dimensions**, click the **Page** arrow **>** that appears when you hover over it. The **Page Items** then appear as sub-components.
 
 **Page arrow image here**
-
-
-
-
-There are icons on the left side of the screen. When you hover over or click on them, this will open the “left rail.” This is where you can access the reporting widgets, visualizations, metrics, dimensions, and segments that are available to you to use in reporting.
-
-Using Workspace is going to involve a lot of dragging and dropping, using the search box, and right clicking. So much right clicking. It’s an insanely powerful tool, but you don’t have to know all of the features to get a lot of value out of it. You can’t break anything—play around with it! Also: Ctrl+Z / Command+Z is Undo. Nice.
-
-### Select Your Desired Report Suite
-
-In the top right of the navigation menu is the Report Suite selector. For this Lab, we’ll be using the Report Suite named “Cross-Industry Demo Data.” It should already be selected.
-
-![9](./images/image9.png)
-
-> **But wait, what is a Report Suite?**<br><br>
-> In Adobe Analytics, a Report Suite is the repository where you send your data and pull reports from. Most commonly, a Report Suite collects data from one website. This is more or less equivalent to a View in Google Analytics, or a Profile in WebTrends.<br><br>
-> Your organization may have different Report Suites set up for different sites and apps, so be sure to check with your administrator to understand where you should be pulling reports from.<br><br>
-> One key difference between Adobe's data collection method and many other tools is that you specify which Report Suite(s) to send data to when you send the data. This is kind of the opposite of how Google Analytics and Webtrends work, where you typically send all your data to one collection location and then filter that down to create different views or profiles via the admin interface. It is worth noting that you cannot shift data between report suites—once it's sent there, it's there.<br><br>
-> There is a feature called Virtual Report Suites that lets you build filtered views from a normal Report Suite, which we'll touch on a little bit later.
 
 ### Select Your Desired Date Range
 
