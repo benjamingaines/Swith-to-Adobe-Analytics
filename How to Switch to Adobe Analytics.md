@@ -174,30 +174,13 @@ This type of visualization is called a [Freeform Table] (https://marketing.adobe
 
 For more metrics descriptions, see the [Metrics] (https://marketing.adobe.com/resources/help/en_US/reference/metrics.html) help.
 
+### About Bounce Rate
 
-We've labeled the first panel in this workspace the Content Report. Within it, there is a table of data labeled “Page Performance.” This type of widget within the report is called a “Freeform Table.”
+Bounce Rate is a common KPI that is used to help measure the effectiveness and the relevance of landing pages in most analytics tools. This is commonly defined as visits that enter the website but do not include a click to another page. For Adobe Analytics, this metric does not include visits that include a click on the landing page. Interactions like downloads, video plays, and navigation may cause the bounce rate to be different from other tools.
 
-Right now, the report is showing a bunch of traffic metrics for the Pages dimension. If you've used Google Analytics, this might look familiar — it's very similar to the All Pages report in GA.
+To compare like metrics across tools, use the **Single Page Visits** metric in Adobe Analytics instead of Bounces. The **Single Page Visits** metric includes the total number of visits that only included one page view, or visits that enter the website but do not include a click to another page.
 
-For reference, this is that report in Google Analytics:
-
-![10](./images/image10.png)
-  
-And here's our version in Workspace:
-
-![11](./images/image11.png)
-
-> **NOTE:** At the end of this guide, we've provided a table showing some of the key metrics we'll be using and comparing them to related metrics in other tools.
-
-Let’s briefly talk through what this all means – we’ve included full explanations in the appendix of this workbook.
-
-> **Bounce Rate in Google vs. Adobe Analytics**<br><br>
-> Bounce Rate is a common KPI that is used to help measure the effectiveness and the relevance of landing pages in most analytics tools. This is commonly defined as visits that enter the website but do not click to another page.<br><br>
-> Adobe is more strict with its bounce definition: it does not include visits that click something on the landing page, either. Interactions like downloads, video plays, and navigation may cause the bounce rate to be different from other tools.<br><br>
-> To compare like metrics across tools, use the “Single Page Visits” metric in Adobe Analytics instead of Bounces. “Single Page Visits” includes what it sounds like – the total number of visits that only included one page view – visits that enter the website but do not click to another page.<br><br>
-> We know – it’s annoying. But, we think that after a while, you’ll prefer being able to look at this both ways.
-
-## Exercise 1.2: Create a Calculated Metric for “Single page visit rate”
+## Create a Calculated Metric for “Single page visit rate”
 
 Most out-of-the box metrics in Adobe Analytics provide counts of things: how many pages did people see, how many files did they download, how many seconds did they spend on the site. Some other tools, Google Analytics in particular, like to show *index metrics* or *calculated metrics* by default instead — because Avinash thinks they're cool. (He's right.)
 
