@@ -121,7 +121,7 @@ Your organization may have different report suites set up for different sites an
 
 One key difference between Adobe's data collection method and many other tools is that you specify which report suite(s) to send data to when you send the data. This is different from other popular tools that typically send all your data to one collection location and then filter that down to create different views or profiles via the admin interface. You cannot shift data between report suites.
 
-You can also build [virtual report suites] (https://marketing.adobe.com/resources/help/en_US/reference/virtual-report-suites.html), which let you build filtered views from a normal report suite.
+You can also build [virtual] (https://marketing.adobe.com/resources/help/en_US/reference/virtual-report-suites.html) report suites, which let you build filtered views from a normal report suite.
 
 For more information on report suites, see the [Report Suites Manager] (https://marketing.adobe.com/resources/help/en_US/reference/report_suites_admin.html) help.
 
