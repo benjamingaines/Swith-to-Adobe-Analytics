@@ -95,7 +95,9 @@ To construct this report:
 
 ### Create a visualization for Pages
 
-Working in Analysis Workspace is an easier way to see all types of available dimensions and metrics. It functions similar to creating basic repors but greatly enhances the speed, flexibility, and customizability of visualizing and analyzing your data. In Analysis Workspace, the **Page Performance** visualization shows traffic metrics for the **Page** dimension.
+Working in Analysis Workspace is an easier way to see all types of available dimensions and metrics. It functions similar to creating basic repors but greatly enhances the speed, flexibility, and customizability of visualizing and analyzing your data. 
+
+In Analysis Workspace, the **Page Performance** visualization shows traffic metrics for the **Page** dimension.
 
 To create a **Page Performance** visualization in Analysis Workspace:
 
@@ -125,6 +127,16 @@ You can also build [virtual] (https://marketing.adobe.com/resources/help/en_US/r
 
 For more information on report suites, see the [Report Suites Manager] (https://marketing.adobe.com/resources/help/en_US/reference/report_suites_admin.html) help.
 
+### About Analysis Workspace Toolbars
+
+Analysis Workspace includes three toolbars that appear according to the icon you select on the far left of the screen.
+
+**Toolbar icons image here**
+
+1. Panels toolbar: Shows options for creating the panels that hold your visualizations
+1. Visualizations toolbar: Shows options for structuring or customizing your visualizations according to form
+1. Components toolbar: Shows options for adding components to visualizations
+
 Customizing your project?
 
 
@@ -133,9 +145,8 @@ The following section describes ways to customize your screen and visualizations
 
 1. To customize the name of this project, click the title in the uppper left of the screen and type the new name.
 
-
-
 1. To change the settings of your project, or to save, share, and edit it, click the applicable menu beneath the title and select the applicable option. Each menu item includes [keyboard shortcuts] (https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/fa_shortcut_keys.html) as well.
+
 
 **Project Title and menus image here**
 
@@ -182,34 +193,26 @@ To compare like metrics across tools, use the **Single Page Visits** metric in A
 
 ## Create a Calculated Metric for “Single page visit rate”
 
-Most out-of-the box metrics in Adobe Analytics provide counts of things: how many pages did people see, how many files did they download, how many seconds did they spend on the site. Some other tools, Google Analytics in particular, like to show *index metrics* or *calculated metrics* by default instead — because Avinash thinks they're cool. (He's right.)
+Most out-of-the box metrics in Adobe Analytics provide counts of things: how many pages viewed, how many files downloaded, how many seconds visitors spend on the site. Other tools, Google Analytics in particular, often show *index metrics* or *calculated metrics* by default.
 
-Index metrics typically divide counts of one thing by counts of another thing: for example, you might divide Conversions by Visits to get Conversion Rate. These metrics are super helpful when you're trying to compare the effectiveness of things with very different volumes—for instance, organic search might bring in ten times the traffic of social media, but conversion rates might show that social media converts at a far higher rate than organic search.
+Index metrics typically divide counts of one thing by counts of another thing: for example, you might divide Conversions by Visits to get Conversion Rate. These metrics are helpful when you are trying to compare the effectiveness of items with different volumes. For excample, organic search might bring in ten times the traffic of social media, but conversion rates might show that social media converts at a far higher rate than organic search.
 
-For now, let's create a simple Calculated Metric and more easily compare the bounce rate versus the single page visit rate in Adobe Analytics.
 
-> **A Word on Calculated Metrics**<br><br>
-> Most other tools today let you create basic calculated metrics that divide, multiply, add, and subtract. Adobe's calculated metrics builder goes above and beyond, letting you layer in segments, throw in advanced mathematical functions like mean, standard deviation and variance, and generally make you wish you took more statistics in college. It's a feature worth exploring at length.
+
+**About Adobe's Calculated Metrics**
+
+Other tools let you create basic calculated metrics that divide, multiply, add, and subtract. Adobe's calculated metrics builder goes beyond this by letting you add segments an include mathematical functions like mean, standard deviation and variance.
 
 ### Open the Calculated Metric Builder
 
-On our trusty left rail navigation, hover over the abacus icon to bring up dimensions, metrics, and segments. We're going to create a metric.
+To more easily compare the bounce rate versus the single page visit rate in Adobe Analytics, you can create a calculated metric. To do this:
 
-1. Click the "+" sign next to where it says “metrics.”
 
-    ![12](./images/image12.png)
-
-### Add a title and choose your settings
-
-1. Start by adding a title: "Single page visit rate".
-
-2. Next, switch the “format” to “percent”: we want to know what percent of people view a page and then immediately leave.
-
-3. Increase the decimal places to 1. Small moves, Ellie. You can set the upward trend to be red, but it doesn’t really matter all that often.
-
-### Find and add Single Page Visits and Entries to the Calculated Metric
-
-1. Return to the left rail. First add the metric “Single Page Visits” to the metric definition. You’ll see multiple components show up: green is a metric—orange is a dimension. You'll get used to it. Choose the green one.
+1. On the **Components** toolbar, Click the **+** next to the **Metrics** component box.
+1. Add the following title: **Single page visit rate**.
+1. For **Format**, select **Percent** (we want to know what percent of people view a page and then immediately leave).
+1. Increase the **Decimal Places** to 1. 
+1. Type **Single Page Visits** in the metric **Definition**. You’ll see multiple components show up: green is a metric—orange is a dimension. You'll get used to it. Choose the gr
 
 2. Next, find “Entries” and add that to the Calculated Metric definition below “Single Page Visits.”
 
