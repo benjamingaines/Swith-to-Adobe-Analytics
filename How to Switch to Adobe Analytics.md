@@ -66,10 +66,10 @@ This guide describes how to
 
 ## All Pages Report
 
-You can construct either a report or a visualization in Analytics that is similar to an **All Pages Report** in other tools. Content performance is one of the fundamentals of web analytics, and this report provides that. This section describes the following:
+You can construct either a report or a visualization in Analytics that is similar to an **All Pages Report** in other tools. This report provides content performanc--one of the fundamentals of web analytics. This section describes the following:
 
 1. How to construct an **Pages** Report with the Analytics report interface.
-1. How to construct a visualization in Analysis Workspace similar to an All Pages Report.
+1. How to construct a **Page Performance** visualization in Analysis Workspace similar to an All Pages Report.
 
 Additionally, by creating these in Analytics, you learn:
 
@@ -89,7 +89,7 @@ To construct this report:
 **Reports Tab Image Here**
 
 
-2. Click **Content** > **Pages**. The **Pages** report appears and shows [dimensions] (https://marketing.adobe.com/resources/help/en_US/reference/dimensions.html), [metrics](https://marketing.adobe.com/resources/help/en_US/sc/implement/ref-metrics.html), and page names.
+2. Click **Content** > **Pages**. The **Pages** report appears and shows [dimensions] (https://marketing.adobe.com/resources/help/en_US/reference/dimensions.html), [metrics] (https://marketing.adobe.com/resources/help/en_US/sc/implement/ref-metrics.html), and page names.
 
 **Pages Report Image Here**
 
@@ -97,32 +97,39 @@ To construct this report:
 
 Working in Analysis Workspace is an easier way to see all types of available dimensions and metrics. It functions similar to creating basic repors but greatly enhances the speed, flexibility, and customizability of visualizing and analyzing your data. In Analysis Workspace, the **Page Performance** visualization shows traffic metrics for the **Page** dimension.
 
-To create a visualization in Analysis Workspace:
+To create a **Page Performance** visualization in Analysis Workspace:
 
-1. Click "Workspace" at the top left of the Analytics screen.
+1. Click **Workspace** at the top left of the Analytics screen.
+1. Click the blue **Create New Project** button. 
+1. For your project, you can use a Template Project or a Blank Project. A blank project is a blank canvas you use to build your visualization. A template is a set of pre-configured reports, components, and visualizations. [Templates are helpful starting points] (https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/starter_projects.html) for building larger dashboards or analyses, and to help others see your insights more quickly. If your organization has an existing template, you can click that and explore the details that follow. Otherwise, click select the **Content Consumption-Web** template and then click **Create**. 
 
-### Configure a New Project based on the Custom Summit Lab Template
+**Template selection image here**
 
-1. Click the Big Blue Button in the middle of your screen that says, “Create New Project.”  
-  
-2. You’ll want to decide whether to use a Template Project or a Blank Project. A Blank Project is exactly what you'd expect — a blank canvas on which to work. A Template is a set of pre-configured reports, components and visualizations. Templates can be a great starting-off point for larger dashboards or analyses, and to help your stakeholders get to insights more quickly.
+1. Scroll down to find the **Top Pages** section on the **Content Consumption** screen. Your template includes visualization starting points, including this one for page content. The information in the visualizations is for demonstration purposes only and does not reflect any real data. Although many **Content** screens [often show dashboards] (https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/) at the top that summarize numerous metrics, this template first shows a flow visualization at the top. This screen can be customized to present visualizations in any order.
 
-3. For this lab, we've created a custom template for you, called "Summit Lab Template". You can use the search box or click Custom Templates and select it. You can open it by clicking "Create" in the bottom right or double-clicking the template itself.  
-  
-    ![7](./images/image7.png)
+**Top Pages Visualization Image Here**
 
-4. Ta-da. Your screen should look like this. *This* is Analysis Workspace.
 
-    ![8](./images/image8.png)
+Customizing your project?
+The following section describes ways to customize your screen and visualizations. Note that your current screen is based on the report suite selected in the 
 
-***NOTE:** We've tricked out this workspace for the purposes of this lab, to show you a few bells and whistles. In your instance of Adobe Analytics, you'll probably have a lot more dimensions, metrics, and segments to work with; all of these visualizations, however, are available out of the box. We also cannot emphasize enough that you are working with **DEMO DATA** from a fake website, that may or may not exist. We're not entirely sure how Adobe puts data here for demo purposes, but not everything makes sense. Your website will thankfully not show bounce rates of 200%, and sadly will probably not have conversion rates of 90% either. Just go with it for now.
+1. To customize the name of this project, click the title in the uppper left of the screen and type the new name.
 
-Now, some quick orientation: The name of the project is in the light grey header, in the top-left of the screen. You can simply click into the text to customize it; this will be a recurring theme in Workspace. Right underneath the title is the Analysis Workspace menu. This is where you can find, among other things, settings to Save, Share, and Edit your project. Each of the menu items is labeled with the associated keyboard shortcut/hotkey, so you don’t necessarily need to click through the menus to find what you’re looking for. There is a full list of Analysis Workspace shortcuts available here:  
-  
-[https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/fa_shortcut_keys.html](https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/fa_shortcut_keys.html)
-  
-Bookmark this. It is useful, we promise. We’re also including it in our forum post, so you have no excuses.  
-  
+
+
+1. To change the settings of your project, or to save, share, and edit it, click the applicable menu beneath the title and select the applicable option. Each menu item includes [keyboard shortcuts] (https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/fa_shortcut_keys.html) as well.
+
+**Project Title and menus image here**
+
+
+
+1. On the left side of the screen, note the **Component** toolbar, which contains groupings for **Dimensions**, **Metrics**, **Segments**, and **Time**. These components are all available to use in your visualizations. The **Dimensions** grouping is expandable into sub-components. Under **Dimensions**, click the **Page** arrow **>** that appears when you hover over it. The **Page Items** then appear as sub-components.
+
+**Page arrow image here**
+
+
+
+
 There are icons on the left side of the screen. When you hover over or click on them, this will open the “left rail.” This is where you can access the reporting widgets, visualizations, metrics, dimensions, and segments that are available to you to use in reporting.
 
 Using Workspace is going to involve a lot of dragging and dropping, using the search box, and right clicking. So much right clicking. It’s an insanely powerful tool, but you don’t have to know all of the features to get a lot of value out of it. You can’t break anything—play around with it! Also: Ctrl+Z / Command+Z is Undo. Nice.
