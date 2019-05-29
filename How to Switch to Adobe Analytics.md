@@ -250,37 +250,27 @@ Instances tells us the total number of times that a user clicked to your website
   
 Adobe also gives you more flexibility about your attribution window than most other tools. The windows aren't channel-specific, but the lookback window is up to you. No six-month attribution window limit exists, as in other analytics tools. You will see a larger percentage of Direct users in Adobe than in others, but this is easily managed with tagged campaigns.
 
-## Exercise 2.1: Analyze Campaign Performance with Marketing Channels
+## Analyze Campaign Performance with Marketing Channels
 
-More often than not, you’ll be asked to understand not just the total number of Paid Search visits & conversions but also which campaigns drove those conversions. We mentioned this, but to reiterate: there can be lots of different reports with lots of different attribution models in Adobe Analytics. When you need to dive deeper into an individual channel performance, always use the Marketing Channel Detail report. This is generally the only report that has the same attribution model as Marketing Channels. (This is why we recommended hiding some other reports earlier—they may confuse people.)  
+It is important to understand not just the total number of Paid Search visits and conversions, but also which campaigns drove those conversions. To dive deeper into an individual channel performance, use the Marketing Channel Detail report. This is generally the only report that has the same attribution model as Marketing Channels.
   
-There may be additional reports in your implementation based on Marketing Channel detail – check with your administrator which ones are and are not safe to use.  
+There may be additional reports in your implementation based on Marketing Channel detail – check with your administrator are available and best to use.  
   
-Now that we’ve got the scary warning aside: the Marketing Channel Detail report will show you a second-level of granularity for each Marketing Channel. This is customized to each Channel, in each Adobe Analytics implementation. Typically, this is set to show the campaign tracking code for all tagged marketing channels, the referrer for all channels based on referrers (like Organic Social or Organic Search), and the entry page name when neither of these exist (like Direct or Mobile App). This is also worth verifying with your Analytics administrator. If you are the Analytics administrator for your organization and you have questions on how to set this up or interpreting what it means, we have included links in the Forum post that might help but please also ask us questions – this is a very important part of your implementation and you should feel confident about it!
+The Marketing Channel Detail report shows you a second-level of granularity for each Marketing Channel. This is customized to each Channel, in each Adobe Analytics implementation. Typically, this is set to show the campaign tracking code for all tagged marketing channels, the referrer for all channels based on referrers (such as Organic Social or Organic Search), and the entry page name when neither of these exist (such as Direct or Mobile App). This is also worth verifying with your Analytics administrator. 
 
-### Add Marketing Channel Detail as a Secondary Dimension
+**Add Marketing Channel Detail as a Secondary Dimension**
 
-1. Do a search in the left rail for Marketing Channel Detail. Drag and drop this component on top of “Email”:
+To add this, in the Component search, type `Marketing Channel Detail`. Drag and drop this component on top of “Email”:
 
-    ![21](./images/image21.png)
+You can add breakdowns to multiple primary dimensions in this report, and in the same way that you added a breakdown to the primary dimension, you can also break down secondary dimensions (and tertiary dimensions, and beyond). This is called “infinite breakdowns” in Adobe Analytics and it’s a great way to dive really deep into your data.
 
-2. Your report should look like this:
+**Analyze Total Channel Contribution to Conversions**
 
-    ![22](./images/image22.png)
+Previously, the Participation attribution model on the Pages report helped us to understand the average value of specific content. Similarly, we can attribute all Online Revenue to every page that a user interacted with during a visit prior to converting. This can be used on any dimension, to attribute all Online Revenue to every dimension value that a user touches during their visit.
 
-    Neat! Keep in mind that you can add breakdowns to multiple primary dimensions in this report, and in the same way that you added a breakdown to the primary dimension, you can also break down secondary dimensions (and tertiary dimensions, and beyond). This is called “infinite breakdowns” in Adobe Analytics and it’s a great way to dive really deep into your data.
+This is the *Visit Participation* model.  Similarly, *Report Participation* allows you to attribute revenue back to all dimension values that a user touched prior to conversion *across the whole report date range*. Report Participation is an “Any Touch” attribution model.
 
-    Unfortunately, the CSV exports for tables with breakdowns in Analysis Workspace leave a lot to be desired. If you’re looking to create a multi-dimensional table for offline analysis (in tools like Excel or Tableau), you’ll need to check out some of the other reporting tools available in Adobe Analytics. We’ve included links in the Forum post.
-
-## Exercise 2.2: Analyze Total Channel Contribution to Conversions
-
-Think back to a short while ago. We used a Participation attribution model on the Pages report to understand the average value of specific content, by attributing all Online Revenue to every page that a user interacted with during a visit prior to converting. This can be used on any dimension, to attribute all Online Revenue to every dimension value that a user touches during their visit.
-
-This model is what’s called “Visit Participation.” There’s another concept in Adobe Analytics called “Report Participation” that allows you to attribute revenue back to all dimension values that a user touched prior to conversion *across the whole report date range*. Report Participation is an “Any Touch” attribution model.
-
-Marketing channels are a great use case for this capability—let's give it a spin.
-
-### Add Online Orders (Report Participation) to the Last Touch Channel report
+**Add Online Orders (Report Participation) to the Last Touch Channel report**
 
 1. Find “Online Orders (Report Participation)”.
 
@@ -292,7 +282,7 @@ Marketing channels are a great use case for this capability—let's give it a sp
 
     > Note: Remember, same caveat here as with Visit Participation: you can’t sum these up, as the same order is attributed to multiple Marketing Channels in Participation models.
 
-## Exercise 2.3: Analyze How Channels “Assist” Conversions
+## Analyze How Channels “Assist” Conversions
 
 So, you see here that Print ads are doing a great job of contributing to Online Orders. Let’s get into the Calculated Metric Builder and play around with attribution modeling, to create a metric that lets us see the total number of Online Orders that each channel participated in but was not the last touch for (AKA “assists”). We’re also going to dip our feet into Attribution IQ, a feature in Analysis Workspace that allows for advanced attribution modeling. We’ve included more information on this in the Next Steps section below.
 
