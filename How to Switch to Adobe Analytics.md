@@ -2,13 +2,20 @@
 
 Congratulations on the decision to switch to Adobe Analytics! You’ve taken your first step into a larger world. Although no two analytics tools are exactly the same, the leading web analytics tools (Adobe Analytics and Google Analytics) share enough common functionality that you can quickly learn how to get meaningful insights into your business.
 
-This guide presents three common report types that help you to learn core concepts and workflows in Adobe Analytics, focusing on key similarities and differences between Adobe and other popular tools. This guide is designed for analysts who are familiar with basic digital analytics concepts, but new to Adobe Analytics.
+This guide presents common report types that help you to learn core concepts and workflows in Adobe Analytics, focusing on key similarities and differences between Adobe and other popular tools. This guide is designed for analysts who are familiar with basic digital analytics concepts, but new to Adobe Analytics.
 
 In this guide, you will learn:
 
 1. Core Adobe Analytics concepts and capabilities and how they relate to other analytics platforms
 1. How to translate specific workflows and terminology into Adobe Analytics
 1. A few advanced capabilities unique to Adobe Analytics
+
+Additionally, this guide provides step-by-step instructions for working with features in the following report types:
+
+*Site Content Reports
+*Marketing Channels Reports
+*Products and Funnel Reports
+
 
 ## Requirements
 
@@ -214,7 +221,7 @@ You can also create participation that mimics the Total Page Value, as found in 
 
 ## Content Velocity
 
-Content Velocity is a Calculated Metric template that typically comes pre-set in Analysis Workspace. This is a way of determining how many page views each page generates. It is calculated by dividing Page Views (Participation) by Page Views. This can be a great way of determining which content is most likely to generate engagement with additional content. 
+Content Velocity is a pre-set calculated metric in Analysis Workspace. This metric determines how many page views each page generates. It is calculated by dividing Page Views (Participation) by Page Views. This can be a great way of determining which content is most likely to generate engagement with additional content. 
 
 ## Marketing Channel Reports
 
@@ -240,11 +247,13 @@ In Analysis Workspace, the Marketing Channel report shows how users found your w
   
 **Traffic Source Attribution in Adobe Analytics**
 
-Adobe includes many reports for traffic source attribution. For best results, it is best for organizations to implement them intelligently and to curate them conscientiously. It also helps to enable the Marketing Channels reports and then hide other traffic source reports that might work at cross purposes. Perhaps this might include referring domains or search engines, as insight is limited with these.
+Adobe includes many reports for traffic source attribution. For best results, organizations should implement them intelligently and curate them conscientiously. It also helps to enable the Marketing Channels reports and then hide other traffic source reports that might work at cross purposes. Perhaps this might include hiding referring domains or search engines.
 
 When setting up your Marketing Channels, review the [default list of social networks:] (https://helpx.adobe.com/analytics/kb/list-social-networks.html).
 
 On the Marketing Channels Report, find the Marketing Channel Instances metric.
+
+**Marketing Channel Instance image here**
 
 Instances tells us the total number of times that a user clicked to your website and the Marketing Channel changed. Similar to other analytic tools, the Marketing Channel persists beyond the initial click-through until the user clicks through from another campaign or referring domain. *Visits* here means the total number of visits where the most recent Marketing Channel was, such as Email. Therefore, “Marketing Channel Instances” here gives the total number of clicks from Email.  
   
@@ -260,87 +269,61 @@ The Marketing Channel Detail report shows you a second-level of granularity for 
 
 **Add Marketing Channel Detail as a Secondary Dimension**
 
-To add this, in the Component search, type `Marketing Channel Detail`. Drag and drop this component on top of “Email”:
+To add this, in **Component** search, type `Marketing Channel Detail`. Drag and drop this component on top of **Email**.
 
 You can add breakdowns to multiple primary dimensions in this report, and in the same way that you added a breakdown to the primary dimension, you can also break down secondary dimensions (and tertiary dimensions, and beyond). This is called “infinite breakdowns” in Adobe Analytics and it’s a great way to dive really deep into your data.
 
 **Analyze Total Channel Contribution to Conversions**
 
-Previously, the Participation attribution model on the Pages report helped us to understand the average value of specific content. Similarly, we can attribute all Online Revenue to every page that a user interacted with during a visit prior to converting. This can be used on any dimension, to attribute all Online Revenue to every dimension value that a user touches during their visit.
+Previously, the Participation attribution model on the **Pages** report helped us to understand the average value of specific content. Similarly, we can attribute all Online Revenue to every page that a user interacted with during a visit prior to converting. This can be used on any dimension, to attribute all Online Revenue to every dimension value that a user touches during their visit. This is the *Visit Participation* model works.
 
-This is the *Visit Participation* model.  Similarly, *Report Participation* allows you to attribute revenue back to all dimension values that a user touched prior to conversion *across the whole report date range*. Report Participation is an “Any Touch” attribution model.
+Similarly, *Report Participation* allows you to attribute revenue back to all dimension values that a user touched prior to conversion *across the whole report date range*. Report Participation is an *Any Touch* attribution model.
 
 **Add Online Orders (Report Participation) to the Last Touch Channel report**
 
-1. Find “Online Orders (Report Participation)”.
+1. Find the **Online Orders (Report Participation)** metric.
 
 2. Add it to the Marketing Channels Report.
 
-    ![23](./images/image23.png)
+**image here**
 
-    You can read this report as: “There were 24K clicks (instances) from Print ads. Print ads were the last-touch channel for 416 total Online Orders, but participated in 5.3K total Online Orders (13% of site total).”
+You can read this report as: *Each click (instances) represents this amount from Print ads. Print ads were the last-touch channel for 416 total Online Orders, but participated in 5.3K total Online Orders (13% of site total).*
 
-    > Note: Remember, same caveat here as with Visit Participation: you can’t sum these up, as the same order is attributed to multiple Marketing Channels in Participation models.
+Remember, as with the Visit Participation metric, these values cannot be summed. The same order in Participation models is attributed to multiple Marketing Channels.
 
-## Analyze How Channels “Assist” Conversions
+## Analyze how channels assist conversions
 
-So, you see here that Print ads are doing a great job of contributing to Online Orders. Let’s get into the Calculated Metric Builder and play around with attribution modeling, to create a metric that lets us see the total number of Online Orders that each channel participated in but was not the last touch for (AKA “assists”). We’re also going to dip our feet into Attribution IQ, a feature in Analysis Workspace that allows for advanced attribution modeling. We’ve included more information on this in the Next Steps section below.
+If you want to see the total number of Online Orders that each channel participated in but was not the last touch--sometimes referred to as *assists*, you can use Adobe's Attribution IQ. This feature allows for advanced attribution modeling. To use this feature:
 
-1. Open the Calculated Metric Builder
+1. Open the Calculated Metric Builder.
+1. Name the metric `Online Order Assists (Report Participation)`.
+1. Drag **Online Orders** into the definition.
+1. Hover over the right side of the metric in the definition, then click on the gear icon.
+1. Click **Use non-default attribution model**.
+1. Set the **Model** to **Participation**.
+1. Select **Visitor (Reporting Window)** as the Lookback Window.
+1. Click **Apply**. Your metric definition should look like this:
 
-2. Name the metric “Online Order Assists (Report Participation)”
+  **image here**
 
-3. Drag Online Orders into the definition
+9. Find **Online Orders** in the toolbar and add it underneath the **Online Orders (Participation|Visitor)** component.
+10. Click to change the operator from Divide to Subtract.
+11. Save the calculated metric and add it to the Marketing Channels Report.
 
-4. Hover over the right side of the metric in the definition, then click on the gear icon
+**image here**
 
-5. Click “Use non-default attribution model”
+This shows all online orders that each channel participated in but was not the last-touch channel. 
 
-    ![24](./images/image24.png)
+If you sum up **Online Orders** with **Online Order Assists**, it should equal **Online Orders (Report Participation).**
 
-6. Set the Model to Participation
+In other analytics tools, you can only do this for *eCommerce + Goals for Channels & Campaigns*. In Adobe Analytics, you can do this for *all* dimension values and for *all* events.
 
-7. Select “Visitor (Reporting Window)” as the Lookback Window.
+## Attribution IQ
 
-8. Click Apply to proceed
+Adobe's Attribution IQ feature allows you to apply custom attribution models to any of your reports. This is unique only to Adobe Analytics. You can use this to understand how different marketing efforts initiate, assist, and close deals for you. Additionally, it can provide insights on linear allocation, J-Curves, time decay, and attribution models within attribution models. To read more on this feature, see [Attribution IQ help] (https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/attribution.html).
 
-    ![25](./images/image25.png)
 
-    Your metric definition should look like this:
-
-    ![26](./images/image26.png)
-
-9. Find Online Orders in the left rail, and add it underneath the “Online Orders (Participation|Visitor)” component
-
-10. Click to change the operator to “Subtract” instead of “Divide”
-
-    ![27](./images/image27.png)
-
-11. Save the Calculated Metric and add it to the Marketing Channels Report.
-
-    ![28](./images/image28.png)
-
-In a nutshell, this is showing all the Online Orders that each channel participated in but was not the last-touch channel for. If you’re excited about the potential here, you’re not alone – this is some cool stuff. Check out “Assisted / Last Click Conversions” in the Bonus section of this workbook.
-
-> **PRO TIP**: You can gut check that you set this up correctly by summing up “Online Orders” and “Online Order Assists” – this should equal “Online Orders (Report Participation).”
-
-And if all of this sounds familiar to you, you might be a Google Analytics Power User fond of this report. You used to only be able to do this for eCommerce + Goals for Channels & Campaigns … in Adobe Analytics, you can do this for *all* dimension values and for *all* events.
-
-Welcome to the light.
-
-![29](./images/image29.png)
-
-## Next Steps
-
-### Attribution IQ
-
-Still here? Mind not blown yet? Then let's get silly.
-
-Adobe released another new feature late last year called Attribution IQ that lets you apply custom attribution models to your reports. There is really nothing like it that we're familiar with in any other analytics platform. Best (or most frightening?) of all, you can apply this to *any* report—not just traffic source reports.
-
-And sure, you can use this to understand how different marketing efforts initiate, assist, and close deals for you. And that's cool. But how about linear allocation? J-Curve? Time Decay? Attribution models within attribution models? It's a powerful feature that even we are still wrapping our heads around. We recommend reading up on it. Know that you have this in your tool box and take this for a spin when you have a practical use case.
-
-### Integrate Media Data
+## Integrate Media Data
 
 Something that Google Analytics likes to brag about is their integration with Google Ads, which allows you to pull impression, click, cost, and view-through information into Google Analytics. Which, we agree, is clutch. But it only works with Google. Because, as we all know, Google equals the internet.
 
