@@ -210,52 +210,50 @@ To add a participation metric:
 
 1. Create a new metric in the Calculated Metrics Builder, as performed previously.
 1. Drag the success event **Orders** into the **Definition** box.
-1. Change the attribution model of that event to `Participation` under the Settings gear. Choose **Visit** lookback. 
+1. Change the attribution model of that event to **Participation** under the Settings gear. Choose **Visit** lookback. 
 1. Save the metric.
 1. Drag the calculated metric to the pages report.
 
-You can also create participation that mimics the Total Page Value, as found in other tools, except that you can put participation in any report you want, for any conversion metric you track. For example, you can use Calculated Metrics to divide `Online Revenue (Participation)` by `Visits`. Similarly, you can also divide `Online Orders (Participation)` by `Visits` to understand the page conversion rate. Unlike the metric in other tools, which is bounded to the Page Value report, you can use this for *any metric in Adobe Analytics.*
+You can also create participation that mimics the Total Page Value, as found in other tools, except that you can put participation in any report you want, for any conversion metric you track. For example, you can use Calculated Metrics to divide **Online Revenue (Participation)** by **Visits**. Similarly, you can also divide **Online Orders (Participation)** by **Visits** to understand the page conversion rate. Unlike the metric in other tools, which is bounded to the Page Value report, you can use this for *any metric in Adobe Analytics.*
 
 ### Content velocity
 
 Content Velocity is a pre-set calculated metric in Analysis Workspace. This metric determines how many page views each page generates. It is calculated by dividing Page Views (Participation) by Page Views. This can be a great way of determining which content is most likely to generate engagement with additional content. 
 
-## Marketing channel reports
+## Marketing channels reports
 
-In Analysis Workspace, the Marketing Channel report shows how users find your website. This includes both tagged (Paid Search, Email) and untagged (Natural Search, Organic Social Referrers) traffic. If you want a pie-chart of traffic, of online orders, or of online revenue, the marketing channel report is best-suited for this purpose. Compared to other tools, Adobe Analytics provides more flexibility on how to measure campaigns and traffic channels. This section shows how you can use Adobe Analytics tools to analyze campaign performance, analyze campaign performance to conversions, and analyze how to measure channels that *assist* conversions. It also includes information on unique Analytics features that enhance your insights into these reports.
+In Analysis Workspace, the Marketing Channels report shows how users find your website. This includes both tagged (paid search, email) and untagged (natural search, organic social referrers) traffic. If you want a pie-chart of traffic, of online orders, or of online revenue, the marketing channels report is best-suited for these purposes. Compared to other tools, Adobe Analytics provides more flexibility on how to measure campaigns and traffic channels. This section shows how you can use Adobe Analytics tools to analyze campaign performance as well as how to analyze campaign performance to conversions. Also, it explains how to measure channels that *assist* conversions and how to use other unique Analytics features that enhance your insights into these reports.
 
 ***About first and last touch channels***
 
 The **Components** menu includes a Last Touch Channel and a First Touch Channel report. In Workspace, the Last Touch Channel is the same as Marketing Channel. The First Touch Channel is the Acquisition Channel. 
 
 
-**Campaign Tracking in Adobe Analytics**
+**Campaign tracking in Adobe Analytics**
 
-Other analytics tools have strict guidelines on how to tag campaign URLs. You must use specific URL parameters, such as utm_campaign, WT.mc_id, cm_mmc, etc. With Adobe Analytics, you have control over which parameter(s) is used to identify campaigns. For example, you can set Adobe up to look for whatever you were using with your old platform, so you do not need to re-tag your URLs. You can also set things up to look first for a new parameter, like cid=, but then return to whatever you used previously. This helps if you want to simplify tagging requirements but also want to make sure old campaigns still floating around get tracked.
-
-In Analysis Workspace, the Marketing Channel report shows how users found your website. This includes both tagged (Paid Search, Email) and untagged (Natural Search, Organic Social Referrers) traffic. If you want a pie-chart of traffic, of online orders, or of online revenue, the marketing channel report is best.  
+Other analytics tools have strict guidelines on how to tag campaign URLs. You must use specific URL parameters, such as `utm_campaign`, `WT.mc_id`, `cm_mmc`, etc. With Adobe Analytics, you have control over which parameters are used to identify campaigns. For example, you can set up Adobe to look for whatever you were using with your old platform, so you do not need to re-tag your URLs. You can also set things up to look first for a new parameter, like `cid=`, but then return to whatever you used previously. This helps if you want to simplify tagging requirements but also want to make sure old campaigns still floating around get tracked.
   
-**Traffic Source Attribution in Adobe Analytics**
+**Traffic source attribution in Adobe Analytics**
 
 Adobe includes many reports for traffic source attribution. For best results, organizations should implement them intelligently and curate them conscientiously. It also helps to enable the Marketing Channels reports and then hide other traffic source reports that might work at cross purposes. Perhaps this might include hiding referring domains or search engines.
 
-When setting up your Marketing Channels, review the [default list of social networks](https://helpx.adobe.com/analytics/kb/list-social-networks.html):
+When setting up your marketing channels, review the [default list of social networks](https://helpx.adobe.com/analytics/kb/list-social-networks.html):
 
-On the Marketing Channels Report, find the Marketing Channel Instances metric.
+On the Marketing Channels Report, find the **Marketing Channel Instances** metric.
 
 *Marketing Channel Instance image here*
 
-Instances tells us the total number of times that a user clicked to your website and the Marketing Channel changed. Similar to other analytic tools, the Marketing Channel persists beyond the initial click-through until the user clicks through from another campaign or referring domain. *Visits* here means the total number of visits where the most recent Marketing Channel was, such as Email. Therefore, “Marketing Channel Instances” here gives the total number of clicks from Email.  
+Instances show the total number of times that a user clicked to your website and the Marketing Channel changed. Similar to its use in other analytic tools, the Marketing Channel persists beyond the initial click-through until the user clicks through from another campaign or referring domain. *Visits* here means the total number of visits where the most recent Marketing Channel was, such as email. Therefore, *Marketing Channel Instances* here gives the total number of clicks from email.  
   
-Adobe also gives you more flexibility about your attribution window than most other tools. The windows aren't channel-specific, but the lookback window is up to you. No six-month attribution window limit exists, as in other analytics tools. You will see a larger percentage of Direct users in Adobe than in others, but this is easily managed with tagged campaigns.
+Adobe also gives you more flexibility for your attribution window than most other tools. The windows are not channel-specific, but the lookback window is up to you. No six-month attribution window limit exists, as in other analytics tools. You will see a larger percentage of Direct users in Adobe than in others, but this is easily managed with tagged campaigns.
 
-### Analyze Campaign Performance with Marketing Channels
+### Analyze campaign performance with marketing channels
 
-It is important to understand not just the total number of Paid Search visits and conversions, but also which campaigns drove those conversions. To dive deeper into an individual channel performance, use the Marketing Channel Detail report. This is generally the only report that has the same attribution model as Marketing Channels.
+It is important to understand not just the total number of Paid Search visits and conversions, but also which campaigns drove those conversions. To look deeper into individual channel performance, use the Marketing Channel Detail report. This is generally the only report that has the same attribution model as Marketing Channels.
   
-There may be additional reports in your implementation based on Marketing Channel detail – check with your administrator are available and best to use.  
+There may be additional reports in your implementation based on Marketing Channel detail – check with your administrator to see which are available and best to use.  
   
-The Marketing Channel Detail report shows you a second-level of granularity for each Marketing Channel. This is customized to each Channel, in each Adobe Analytics implementation. Typically, this is set to show the campaign tracking code for all tagged marketing channels, the referrer for all channels based on referrers (such as Organic Social or Organic Search), and the entry page name when neither of these exist (such as Direct or Mobile App). This is also worth verifying with your Analytics administrator. 
+The Marketing Channel Detail report shows you a second-level of granularity for each Marketing Channel. This is customized to each Channel, in each Adobe Analytics implementation. Typically, this is set to show the campaign tracking code for all tagged marketing channels, the referrer for all channels--based on referrers (such as organic social or organic search), and the entry page name when neither of these exist (such as direct or mobile app). This is also worth verifying with your Analytics administrator. 
 
 *Add Marketing Channel Detail as a Secondary Dimension*
 
@@ -263,23 +261,22 @@ To add this, in **Component** search, type `Marketing Channel Detail`. Drag and 
 
 You can add breakdowns to multiple primary dimensions in this report, and in the same way that you added a breakdown to the primary dimension, you can also break down secondary dimensions (and tertiary dimensions, and beyond). This is a useful way to dive deep into your data.
 
-### Analyze Total Channel Contribution to Conversions
+### Analyze total channel contribution to conversions
 
-Previously, the Participation attribution model on the **Pages** report helped us to understand the average value of specific content. Similarly, we can attribute all Online Revenue to every page that a user interacted with during a visit prior to converting. This can be used on any dimension, to attribute all Online Revenue to every dimension value that a user touches during their visit. This is the *Visit Participation* model works.
+Previously, the Participation attribution model on the **Pages** report helped us to understand the average value of specific content. Similarly, we can attribute all Online Revenue to every page that a user interacted with during a visit prior to converting. This can be used on any dimension to attribute all Online Revenue to every dimension value that a user touches during their visit. This is how the *Visit Participation* model works.
 
-Similarly, *Report Participation* allows you to attribute revenue back to all dimension values that a user touched prior to conversion *across the whole report date range*. Report Participation is an *Any Touch* attribution model.
+Similarly, *Report Participation* allows you to attribute revenue back to all dimension values that a user touched prior to conversion across the whole report date range. Report Participation is an *Any Touch* attribution model.
 
 *Add Online Orders (Report Participation) to the last touch channel report*
 
 1. Find the **Online Orders (Report Participation)** metric.
-
 2. Add it to the Marketing Channels Report.
 
 *image here*
 
 You can read this report as: *Each click (instances) represents this amount from Print ads. Print ads were the last-touch channel for 416 total Online Orders, but participated in 5.3K total Online Orders (13% of site total).*
 
-Remember, as with the Visit Participation metric, these values cannot be summed. The same order in Participation models is attributed to multiple Marketing Channels.
+Remember, as with the **Visit Participation** metric, these values cannot be summed. The same order in Participation models is attributed to multiple Marketing Channels.
 
 ### Analyze how channels assist conversions
 
@@ -312,10 +309,9 @@ In other analytics tools, you can only do this for *eCommerce + Goals for Channe
 
 Adobe's Attribution IQ feature allows you to apply custom attribution models to any of your reports. This is unique only to Adobe Analytics. You can use this to understand how different marketing efforts initiate, assist, and close deals for you. Additionally, it can provide insights on linear allocation, J-Curves, time decay, and attribution models within attribution models. To read more on this feature, see [Attribution IQ help](https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/attribution.html).
 
-
 ### Integrate media data
 
-Adobe provides numerous ways to integrate your media data into Analytics. This includes the integration with Adobe Media Optimizer and Adobe Ad Cloud, as well as Target and Campaign. Analytics includes a data connector for DoubleClick, which allows you to pull in DoubleClick data, including view-through conversions. Many third-party email platforms have Data Connectors of their own. Additionally, a Adobe has a new feature called Advertising Analytics, which lets you pull impression, click, and cost data from Google, Bing, and Yahoo!.
+Adobe provides numerous ways to integrate your media data into Analytics. This includes the integration with Adobe Media Optimizer and Adobe Ad Cloud, as well as Target and Campaign. Analytics includes a data connector for DoubleClick, which allows you to pull in DoubleClick data, including view-through conversions. Many third-party email platforms have Data Connectors of their own. Additionally, Adobe's provides a feature, called *Advertising Analytics*, which lets you pull impression, click, and cost data from Google, Bing, and Yahoo!.
 
 ## Products and funnel reports
 
