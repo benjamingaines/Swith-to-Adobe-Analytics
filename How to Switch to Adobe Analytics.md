@@ -167,15 +167,13 @@ To compare like metrics across tools, use the **Single Page Visits** metric in A
 
 ### Create a calculated metric
 
-Most out-of-the box metrics in Adobe Analytics provide counts of things: how many pages viewed, how many files downloaded, how many seconds visitors spend on the site. Other tools, Google Analytics in particular, often show *index metrics* or *calculated metrics* by default.
+Most out-of-the box metrics in Adobe Analytics provide counts of things: how many pages viewed, how many files downloaded, how many seconds visitors spend on the site. Other tools, Google Analytics in particular, often show *index metrics* or *calculated metrics* by default. Adobe Analytics includes a dedicated calculated metrics builder that includes functionality for advanced mathematical metrics. While other tools let you create basic calculated metrics that divide, multiply, add, and subtract, Adobe's allows you to do this as well as add segments for calculating mean, standard deviation, variance, and others.
 
-Index metrics typically divide counts of one thing by counts of another thing: for example, you might divide Conversions by Visits to get Conversion Rate. These metrics are helpful when you are trying to compare the effectiveness of items with different volumes. For example, organic search might bring in ten times the traffic of social media, but conversion rates might show that social media converts at a far higher rate than organic search.
-
-Other tools let you create basic calculated metrics that divide, multiply, add, and subtract. Adobe's calculated metrics builder goes beyond this by letting you add segments an include mathematical functions like mean, standard deviation and variance.
+Index metrics in other tools are typically limited to dividing counts of one thing by counts of another thing: for example, you might divide Conversions by Visits to get Conversion Rate. These metrics are helpful when you are trying to compare the effectiveness of items with different volumes. For example, organic search might bring in ten times the traffic of social media, but conversion rates might show that social media converts at a far higher rate than organic search. Adobe's calculated metric builder is especially helpful in cases like this. 
 
 If you do not already have a calculated metric in your project, you can create one by following these steps:
 
-1. On the **Components** toolbar, Click the **+** next to the **Metrics** component box.
+1. On the **Components** toolbar, click the **+** next to the **Metrics** component box.
 1. Add the following title: **Page Views per Visit**.
 1. For **Format**, select **Decimal**.
 1. Increase the **Decimal Places** to 2. 
@@ -188,36 +186,35 @@ If you do not already have a calculated metric in your project, you can create o
 To add your new calculated metric to the page performance visualization (or **Top Pages** free-form table):
 
 1. Expand the **Content Consumption** panel, if not already expanded. 
-1. Drag your new calculated metric from the Metrics box to the page performance freeform table header. The blue flag that appears as you drag the metric indicates where the column is added when you drop it. The visualization now includes a new column with new metric data.
+1. Drag your new calculated metric from the **Metrics** box on the toolbar to the page performance freeform table header. The blue flag that appears as you drag the metric indicates where the column is added when you drop it. The visualization now includes a new column with new metric data.
 
 ### Page value: add conversion metrics
 
-Conversion metrics show data about success events, such as purchases, downloads, or any other action that you want users to take on your website.
-To add conversion metrics to the page performance visualization (or **Top Pages** free-form table) you can refer to the following example procedure:
+Conversion metrics show data about success events, such as purchases, downloads, or any other action that you want users to take on your website. To add conversion metrics to the page performance visualization (or **Top Pages** free-form table) you can refer to the following example procedure:
 
 1. In the **Components** search box, type `Online Revenue`.
 2. Drag and add it next to the metrics on the page performance table.
 3. Sort the pages in descending order, based on how much online revenue they generated. To do this, hover between the trend line and the online revenue totals at the top of the column. When the downward arrow appears, click it. To sort it back in ascending order, click the upward arrow that appears when you hover in the same place.
 
-Note that the online revenue is attributed to the order confirmation page. This is because the pages report uses a *Last Touch attribution* model. 
+Note that online revenue is attributed to the order confirmation page. This is because the pages report uses a *Last Touch attribution* model. 
 
 ### Page value: add participation metrics
 
-[Participation](https://marketing.adobe.com/resources/help/en_US/analytics/calcmetrics/participation_metric.html) is a unique type of attribution available for all metrics in Adobe Analytics. Participation models assign full credit for conversions to all dimension values that a user touched prior to the conversion. For instance, if a user spends $100 on your site and hits 10 pages during the visit, Revenue Participation gives $100 credit to each of those 10 pages. You can set the look-back window to be during the same visit, or for the same visitor during the reporting date range. This not only useful, but critical when trying to accurately understand how different pages, campaigns, search terms, etc. contribute to ultimate conversion.
+[Participation](https://marketing.adobe.com/resources/help/en_US/analytics/calcmetrics/participation_metric.html) is a unique type of attribution available for all metrics in Adobe Analytics. Participation models assign full credit for conversions to all dimension values that a user touched prior to the conversion. For instance, if a user spends $100 on your site and hits 10 pages during the visit, Revenue Participation gives $100 credit to each of those 10 pages. You can set the look-back window to be during the same visit, or for the same visitor during the reporting date range. This not only useful, but also critical when trying to accurately understand how different pages, campaigns, search terms, etc. contribute to ultimate conversion.
 
-Because full credit is assigned to each dimensional value the visitor hits along the way, it is not possible to provide a sum for participation metrics to understand the total number of conversions. Such a count would be too high to be useful. Instead, you can use the value in the column header, which deduplicates the data. Participation metrics are retroactive, applying past data to the new metric.
+Because full credit is assigned to each dimensional value the visitor hits along the way, it is not possible to provide a sum for participation metrics to understand the total number of conversions. Such a count would be too high to be useful. Instead, you can use the value in the column header, which deduplicates the data. Participation metrics are retroactive, applying the new metric to past data as specified.
 
 Your administrator can also set up calculated participation metrics for your organization.
 
 To add a participation metric:
 
-1. Create a new metric in the Calculated Metric Builder, as performed previously.
+1. Create a new metric in the Calculated Metrics Builder, as performed previously.
 1. Drag the success event **Orders** into the **Definition** box.
 1. Change the attribution model of that event to `Participation` under the Settings gear. Choose **Visit** lookback. 
 1. Save the metric.
 1. Drag the calculated metric to the pages report.
 
-You can also create participation that mimics the Total Page Value, as found in other tools, except that you can put participation in any report you want, for any conversion metric you track. For example, you can use Calculated Metrics to divide `Online Revenue (Participation)` by `Visits`. Similarly, you can also divide `Online Orders (Participation)` by `Visits` to understand the page conversion rate. Unlike the metric in other tools, which is bounded to Page Value report, you can use this for *any metric in Adobe Analytics.*
+You can also create participation that mimics the Total Page Value, as found in other tools, except that you can put participation in any report you want, for any conversion metric you track. For example, you can use Calculated Metrics to divide `Online Revenue (Participation)` by `Visits`. Similarly, you can also divide `Online Orders (Participation)` by `Visits` to understand the page conversion rate. Unlike the metric in other tools, which is bounded to the Page Value report, you can use this for *any metric in Adobe Analytics.*
 
 ### Content velocity
 
