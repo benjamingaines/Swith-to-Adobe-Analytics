@@ -49,13 +49,13 @@ Site content reports include ways to analyze page traffic and page conversions a
 
 You can construct either a report or a visualization in Analytics that is similar to an **All Pages Report** in other tools. This report provides content performance--one of the fundamentals of web analytics. This section describes the following:
 
-1. How to construct an **Pages** Report with the Analytics report interface.
-1. How to construct a **Page Performance** visualization in Analysis Workspace similar to an All Pages Report.
+1. How to construct a **Pages** Report with the Analytics report interface
+1. How to construct a **Page Performance** visualization in Analysis Workspace similar to an All Pages Report
 
 Additionally, by creating these in Analytics, you learn:
 
 1. How to navigate the reporting interface to measure page traffic
-1. Key Adobe Analytics concepts, such as report suites, dimensions and metrics
+1. Key Adobe Analytics concepts, such as report suites, dimensions, and metrics
 1. How to quickly customize reports
 1. How the content on your pages contributes to conversion
 1. How to share your report with others
