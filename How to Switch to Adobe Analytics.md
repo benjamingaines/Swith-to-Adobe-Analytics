@@ -242,7 +242,7 @@ In Analysis Workspace, the Marketing Channel report shows how users found your w
 
 Adobe includes many reports for traffic source attribution. For best results, organizations should implement them intelligently and curate them conscientiously. It also helps to enable the Marketing Channels reports and then hide other traffic source reports that might work at cross purposes. Perhaps this might include hiding referring domains or search engines.
 
-When setting up your Marketing Channels, review the [default list of social networks:](https://helpx.adobe.com/analytics/kb/list-social-networks.html).
+When setting up your Marketing Channels, review the [default list of social networks] (https://helpx.adobe.com/analytics/kb/list-social-networks.html):
 
 On the Marketing Channels Report, find the Marketing Channel Instances metric.
 
