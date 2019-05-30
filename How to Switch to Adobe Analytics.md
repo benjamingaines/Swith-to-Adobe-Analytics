@@ -332,16 +332,12 @@ The instructions also include:
 
 ### Analyze product performance for desktop visitors
 
+***About unspecified rows***
 
-> **What in tarnation is "Unspecified?"**<br><br>
-> On many reports you may see a row labeled "Unspecified", or "None". Most of the time, this can safely be ignored.<br><br>
-> Adobe likes to give you all data for every metric on your report, even if there's no associated dimension value for it. They do this to provide context to your data. That's what they say, anyway.<br><br>
-> So if we're looking at a Products report and have a metric like, sigh, Occurrences on it, there are plenty of things that happened on the site that didn't involve a product. So those Occurrences show up with "Unspecified" for the dimension.<br><br>
-> Now, if your products report shows "Unspecified" getting credit for, say, product views or cart additions, that may be an implementation issue. Use your gut to decide if it looks fishy.
+On some reports you may see a row labeled **Unspecified**, or **None**. You can ignore these rows, generally. Adobe likes to give you all data for every metric on your report, even if there's no associated dimension value for it. This is to provide context for your data. For example, if a Products report contains a metric such as **Occurrences** on it and it shows  **Unspecified**, this might reflect actions on a site that did not involve a product. But if **Unspecified** shows up getting credit for product views or cart additions, that may be an implementation issue.
 
-![30](./images/image30.png)
 
-1. Find the **Desktop Visitors** segment in the **Components** toolbar.
+1. Find the **Desktop Visitors** [segment](https://marketing.adobe.com/resources/help/en_US/analytics/segment/seg_overview.html) in the **Components** toolbar.
 
     > **What's a Segment?**<br><br>
     > A segment lets you filter a report by something that's not on that report. For instance, you could apply a segment to a Products report to show only mobile device activity, even though nothing on the Products report tells you about device type.<br><br>
