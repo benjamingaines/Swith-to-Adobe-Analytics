@@ -1,6 +1,6 @@
 # How to switch to Adobe Analytics
 
-Congratulations on the decision to switch to Adobe Analytics! You’ve taken your first step into a larger world. Although no two analytics tools are exactly the same, the leading web analytics tools (Adobe Analytics and Google Analytics) share enough common functionality that you can quickly learn how to get meaningful insights into your business.
+Congratulations on the decision to switch to Adobe Analytics! You’ve taken your first step into a larger world. Although no two analytics tools are the same, the leading web analytics tools (Adobe Analytics and Google Analytics) share enough common functionality that you can quickly learn how to get meaningful insights into your business.
 
 This guide presents common report types that help you to learn core concepts and workflows in Adobe Analytics, focusing on key similarities and differences between Adobe and other popular tools. This guide is designed for analysts who are familiar with basic digital analytics concepts, but new to Adobe Analytics.
 
@@ -18,7 +18,7 @@ Additionally, this guide provides step-by-step instructions for working with fea
 
 ## Requirements
 
-You can read and learn from this guide with no special requirements. However, to perform  steps shown in this guide yourself, you will need the following:
+You can read and learn from this guide with no special requirements. However, to perform the steps shown in this guide yourself, you will need the following:
 
 1. Access to an existing Adobe Analytics account, or a demo account
 1. A basic understanding of web analytics concepts, such as page views, bounce rates, conversions, and funnels
@@ -37,16 +37,17 @@ Make sure that your Analytics is fully implemented with web properties.
 
 ## Analytics visual tools
 
-Adobe Analytics provides two different visual tools to analyze your business: Analysis Workspace and Reports and Analytics. In Analysis Workspace, you work with visualizations that correspond to reports in different tools. These visualizations show key metrics for your web business. The visualizations are not only more flexible and robust in displaying metrics, they are also easier to create. They also provide much more detail than traditional reports. You create visualizations by dragging and dropping data tables,dimensions, metrics, segments and time periods on the Analysis Workspace user interface. You can also extend visualizations with right-click options. For more information on the features of Analysis Workspace visualizations, see the [Analysis Workspace Overview](https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/). Adobe's Reports and Analytics capabilities also correspond with report types in other tools. Both tools offer unique capabilities that go beyond simply measuring page traffic so that you can better understand how pages convert users. 
+Adobe Analytics provides two different visual tools to analyze your business: Analysis Workspace and Reports and Analytics. In Analysis Workspace, you work with visualizations that correspond to reports in different tools. These visualizations show key metrics for your web business. The visualizations are not only more flexible and robust in displaying metrics, they are also easier to create. They also provide much more detail than traditional reports. You create visualizations by dragging and dropping data tables, dimensions, metrics, segments, and time periods on the Analysis Workspace user interface. 
+
+You can also extend visualizations with right-click options. For more information on the features of Analysis Workspace visualizations, see the [Analysis Workspace Overview](https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/). Adobe's Reports and Analytics capabilities also correspond with report types in other tools. Both tools offer unique capabilities that go beyond simply measuring page traffic so that you can better understand how pages convert users. 
 
 ## Site content reports
 
 Site content reports include ways to analyze page traffic and page conversions and to create calculated metrics and *assist* metrics. This section explains how site content reports work in Adobe Analytics and shows the tools and interface for creating the reports and visualizations. 
 
-
 ### All Pages Report
 
-You can construct either a report or a visualization in Analytics that is similar to an **All Pages Report** in other tools. This report provides content performanc--one of the fundamentals of web analytics. This section describes the following:
+You can construct either a report or a visualization in Analytics that is similar to an **All Pages Report** in other tools. This report provides content performance--one of the fundamentals of web analytics. This section describes the following:
 
 1. How to construct an **Pages** Report with the Analytics report interface.
 1. How to construct a **Page Performance** visualization in Analysis Workspace similar to an All Pages Report.
@@ -73,7 +74,7 @@ To construct this report:
 
 #### Create a visualization for Pages
 
-Analysis Workspace provides an easier way to see all types of available dimensions and metrics. It functions similar to creating basic repors but greatly enhances the speed, flexibility, and customizability of visualizing and analyzing your data. 
+Analysis Workspace provides an easier way to see all types of available dimensions and metrics. It functions similar to creating basic reports but greatly enhances the speed, flexibility, and customizability of visualizing and analyzing your data. 
 
 In Analysis Workspace, the **Page Performance** visualization shows traffic metrics for the **Page** dimension.
 
@@ -119,7 +120,7 @@ Analysis Workspace includes three toolbars that appear according to the icon you
 
 The following section describes ways to customize your screen and visualizations. The typical screen actions associated with customizing your visualizations include dragging and dropping screen elements and right-clicking visualization items to select other options and actions. 
 
-1. To customize the name of this project, click the title in the uppper left of the screen and type the new name.
+1. To customize the name of this project, click the title in the upper left of the screen and type the new name.
 
 1. To change the settings of your project, or to save, share, and edit it, click the applicable menu beneath the title and select the applicable option. Each menu item includes [keyboard shortcuts](https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/fa_shortcut_keys.html) as well.
 
@@ -162,13 +163,13 @@ For more metrics descriptions, see the [Metrics](https://marketing.adobe.com/res
 
 Bounce Rate is a common KPI that is used to help measure the effectiveness and the relevance of landing pages in most analytics tools. This is commonly defined as visits that enter the website but do not include a click to another page. For Adobe Analytics, this metric does not include visits that include a click on the landing page. Interactions like downloads, video plays, and navigation may cause the bounce rate to be different from other tools.
 
-To compare like metrics across tools, use the **Single Page Visits** metric in Adobe Analytics instead of Bounces. The **Single Page Visits** metric includes the total number of visits that only included one page view, or visits that enter the website but do not include a click to another page.
+To compare like metrics across tools, use the **Single Page Visits** metric in Adobe Analytics instead of Bounces. The **Single Page Visits** metric includes the total number of visits that only included one-page view, or visits that enter the website but do not include a click to another page.
 
 ### Create a calculated metric
 
 Most out-of-the box metrics in Adobe Analytics provide counts of things: how many pages viewed, how many files downloaded, how many seconds visitors spend on the site. Other tools, Google Analytics in particular, often show *index metrics* or *calculated metrics* by default.
 
-Index metrics typically divide counts of one thing by counts of another thing: for example, you might divide Conversions by Visits to get Conversion Rate. These metrics are helpful when you are trying to compare the effectiveness of items with different volumes. For excample, organic search might bring in ten times the traffic of social media, but conversion rates might show that social media converts at a far higher rate than organic search.
+Index metrics typically divide counts of one thing by counts of another thing: for example, you might divide Conversions by Visits to get Conversion Rate. These metrics are helpful when you are trying to compare the effectiveness of items with different volumes. For example, organic search might bring in ten times the traffic of social media, but conversion rates might show that social media converts at a far higher rate than organic search.
 
 Other tools let you create basic calculated metrics that divide, multiply, add, and subtract. Adobe's calculated metrics builder goes beyond this by letting you add segments an include mathematical functions like mean, standard deviation and variance.
 
@@ -178,7 +179,7 @@ If you do not already have a calculated metric in your project, you can create o
 1. Add the following title: **Page Views per Visit**.
 1. For **Format**, select **Decimal**.
 1. Increase the **Decimal Places** to 2. 
-1. Drag the Page Views metric to the Definition box. Then drage the Visits/Vistors metric to the same box under the first metric (wait until the blue line appears to drop it).
+1. Drag the Page Views metric to the Definition box. Then drag the **Visits/Vistors** metric to the same box under the first metric (wait until the blue line appears to drop it).
 1. Between the two metrics listed in the Definition, select the Divide operator (if not already selected).
 1. Click **Save**. Note that the new calculated metric is added to the **Metrics** box. Anytime you make a change to the metric definition.
 
@@ -216,7 +217,7 @@ To add a participation metric:
 1. Save the metric.
 1. Drag the calculated metric to the pages report.
 
-You can also create participation that mimics the Total Page Value, as found in other tools, except that you can put participation in any report you want, for any conversion metric you track. For example, you can use Calculated Metrics to divide `Online Revenue (Participation)` by `Visits`. Similarly, you can also divide `Online Orders (Participation)` by `Visits` to understand the page conversion rate. Unlike the metric in other tools, which is bounded to Page Value report, you can use thisfor *any metric in Adobe Analytics.*
+You can also create participation that mimics the Total Page Value, as found in other tools, except that you can put participation in any report you want, for any conversion metric you track. For example, you can use Calculated Metrics to divide `Online Revenue (Participation)` by `Visits`. Similarly, you can also divide `Online Orders (Participation)` by `Visits` to understand the page conversion rate. Unlike the metric in other tools, which is bounded to Page Value report, you can use this for *any metric in Adobe Analytics.*
 
 ### Content velocity
 
@@ -263,7 +264,7 @@ The Marketing Channel Detail report shows you a second-level of granularity for 
 
 To add this, in **Component** search, type `Marketing Channel Detail`. Drag and drop this component on top of **Email**.
 
-You can add breakdowns to multiple primary dimensions in this report, and in the same way that you added a breakdown to the primary dimension, you can also break down secondary dimensions (and tertiary dimensions, and beyond). This is called “infinite breakdowns” in Adobe Analytics and it’s a great way to dive really deep into your data.
+You can add breakdowns to multiple primary dimensions in this report, and in the same way that you added a breakdown to the primary dimension, you can also break down secondary dimensions (and tertiary dimensions, and beyond). This is a useful way to dive deep into your data.
 
 ### Analyze Total Channel Contribution to Conversions
 
@@ -298,7 +299,7 @@ If you want to see the total number of Online Orders that each channel participa
 
 *image here*
 
-9. Find **Online Orders** in the toolbar and add it underneath the **Online Orders (Participation|Visitor)** component.
+9. Find **Online Orders** in the toolbar and add it underneath the **Online Orders (Participation/Visitor)** component.
 10. Click to change the operator from Divide to Subtract.
 11. Save the calculated metric and add it to the Marketing Channels Report.
 
@@ -317,11 +318,11 @@ Adobe's Attribution IQ feature allows you to apply custom attribution models to 
 
 ### Integrate media data
 
-Adobe provides a number of ways to integrate your media data into Analytics. This includes the integration with Adobe Media Optimizer and Adobe Ad Cloud, as well as Target and Campaign. Analytics includes a data connector for DoubleClick, which allows you to pull in DoubleClick data, including view-through conversions. Many third-party email platforms have Data Connectors of their own. Additionally, a Adobe has a new feature called Advertising Analytics, which lets you pull impression, click, and cost data from Google, Bing, and Yahoo!.
+Adobe provides numerous ways to integrate your media data into Analytics. This includes the integration with Adobe Media Optimizer and Adobe Ad Cloud, as well as Target and Campaign. Analytics includes a data connector for DoubleClick, which allows you to pull in DoubleClick data, including view-through conversions. Many third-party email platforms have Data Connectors of their own. Additionally, a Adobe has a new feature called Advertising Analytics, which lets you pull impression, click, and cost data from Google, Bing, and Yahoo!.
 
 ## Products and funnel reports
 
-If you are using a different analytics tool, you probably have to find work-arounds to report on your sales funnels *exactly* how they should be measured. With Adobe Analytics, advanced analysis functionality is already included, which allows you to define unlimited and customizable product and funnel reports for your eCommerce and content sites. This section shows you how to measure product performance by using a standard eCommerce checkout funnel. 
+If you are using a different analytics tool, you probably must find work-arounds to report on your sales funnels *exactly* how they should be measured. With Adobe Analytics, advanced analysis functionality is already included, which allows you to define unlimited and customizable product and funnel reports for your eCommerce and content sites. This section shows you how to measure product performance by using a standard eCommerce checkout funnel. 
 
 The instructions also include:
 
@@ -369,12 +370,12 @@ To take a closer look at the fallout from Product Category (Product Browse Grid)
 To see all visitors who go to Category pages and the product fallout from those pages:
 
 1. Change Container from Visitor to Visit Scope. By default, this shows you the path of Unique Visitors and includes All Visits as the first touchpoint.   
-1. To changed the default, click the gear icon in the upper right-hand corner of the Fallout report. This opens the Fallout Settings.
+1. To change the default, click the gear icon in the upper right-hand corner of the Fallout report. This opens the Fallout Settings.
 1. Toggle the container from Visitor to Visit to show the total number of visits that go through your sequence during a single visit, instead of the total number of visitors who go through your sequence during the report timeframe. 
 
 For Category Page Fallout, you can change this to be **Visit** scoped.
 
-To start funnel at Category Visits, in the same settings menu, un-check the opton box for `Show All Visits` as the first touchpoint. This removes the bar at the start of the funnel that shows you the total number of Visits/Visitors, making the first step of your sequence Category Page Visits.  
+To start funnel at Category Visits, in the same settings menu, un-check the option box for `Show All Visits` as the first touchpoint. This removes the bar at the start of the funnel that shows you the total number of Visits/Visitors, making the first step of your sequence Category Page Visits.  
   
 *image*
 
@@ -430,9 +431,9 @@ This section describes some standard options to store and distribute Analysis Wo
 
 ### Save your project
 
-On the Project menu, click **Save.** This saves the project in your account and you can come back to it whenever you would like. It is not shared with any other users unless you explicitly grant them access.
+On the Project menu, click **Save**. This saves the project in your account and you can come back to it whenever you would like. It is not shared with any other users unless you explicitly grant them access.
 
-If you have not already named your project, you are promted to do this upon saving.
+If you have not already named your project, you are prompted to do this upon saving.
 
 ### Share this report with other Adobe Analytics users
 
