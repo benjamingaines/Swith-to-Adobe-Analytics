@@ -100,7 +100,7 @@ In Adobe Analytics, a report suite is the repository where you send your data an
 
 Your organization may have different report suites set up for different sites and apps. Check with your administrator to understand where you should be pulling reports from.
 
-One key difference between Adobe's data collection method and many other tools is that you specify which report suite(s) to send data to when you send the data. This is different from other popular tools that typically send all your data to one collection location and then filter that down to create different views or profiles via the admin interface. You cannot shift data between report suites.
+One key difference between Adobe's data collection method and many other tools is that you specify which report suite(s) to send data to when you send the data. This is different from other tools that typically send all your data to one collection location and then filter that down to create different views or profiles via the admin interface.
 
 You can also build [virtual](https://marketing.adobe.com/resources/help/en_US/reference/virtual-report-suites.html) report suites, which let you build filtered views from a normal report suite.
 
