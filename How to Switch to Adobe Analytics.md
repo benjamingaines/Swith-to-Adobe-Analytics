@@ -344,7 +344,7 @@ A Fallout Report in Adobe Analytics is a dynamic visualization showing how many 
 
 To analyze fallout with the eCommerce Conversion Funnel, scroll to find the Product Conversion Funnel Report.
 
-After scrolling down to find the Product Conversion Funnel report, you might try to compare the data here against the Products Performance Report. You might notice that they do not match. The Product Performance Report shows the total number of Product Views, Cart Additions, and Online Orders. By contrast, the fallout visualization shows the total number of *visitors* who viewed products, the total number of *visitors* who added items to their cart after viewing products, and the total number of visitors who bought products online after having viewed products and adding items to their cart.  
+After scrolling down to find the Product Conversion Funnel report, you might try to compare the data here against the Products Performance Report. You might notice that they do not match. The Product Performance Report shows the total number of Product Views, Cart Additions, and Online Orders. By contrast, the fallout visualization shows the total number of *visitors* who viewed products, the total number of *visitors* who added items to their cart after viewing products, and the total number of visitors who bought products online after having viewed products and added them to their cart.  
 
 The fallout visualization enforces sequence and deduplicates. The freeform table does neither.
 
@@ -352,37 +352,36 @@ Fallout reports are also helpful because you are not limited to using either met
 
 To take a closer look at the fallout from Product Category (Product Browse Grid) pages:
 
-
 1. Click the **Page Type** dimension.
 1. Hover over the dimension and click into the right-facing arrow that appears.
-1. On the menu that appears, click the dimension value most appropriate. The menu shows the most common Page Type values in the last six months. You can use these dimension values the same way that you can use Segments, Dimensions, and Metrics in the report.
+1. On the menu that appears, click the dimension value most appropriate. The menu shows the most common Page Type values in the last six months. You can use these dimension values the same way that you can use segments, dimensions, and metrics in the report.
 1. Find **Category** and then drag and drop this on top of the **Product Views exist** step. Your report should appear as follows:
 
 *Image here*
 
 To see all visitors who go to Category pages and the product fallout from those pages:
 
-1. Change Container from Visitor to Visit Scope. By default, this shows you the path of Unique Visitors and includes All Visits as the first touchpoint.   
+1. Change **Container** from **Visitor** to **Visit Scope**. 
 1. To change the default, click the gear icon in the upper right-hand corner of the Fallout report. This opens the Fallout Settings.
-1. Toggle the container from Visitor to Visit to show the total number of visits that go through your sequence during a single visit, instead of the total number of visitors who go through your sequence during the report timeframe. 
+1. Toggle the container from **Visitor** to **Visit** to show the total number of visits that go through your sequence during a single visit, instead of the total number of visitors who go through your sequence during the report timeframe. 
 
 For Category Page Fallout, you can change this to be **Visit** scoped.
 
-To start funnel at Category Visits, in the same settings menu, un-check the option box for `Show All Visits` as the first touchpoint. This removes the bar at the start of the funnel that shows you the total number of Visits/Visitors, making the first step of your sequence Category Page Visits.  
+To start funnel at Category Visits, in the same settings menu, un-check the option box for **Show All Visits** as the first touchpoint. This removes the bar at the start of the funnel that shows you the total number of Visits/Visitors, making the first step of your sequence Category Page Visits.  
   
 *image*
 
 ### Cart abandonment segments
 
-The Adobe Experience Cloud makes it simple to turn segments in Analytics into Audiences in other Adobe Marketing Cloud solutions, where you can craft personalized and relevant experiences based on the user’s web behavior. 
+Adobe Experience Cloud makes it simple to turn segments in Analytics into Audiences in other Adobe Marketing Cloud solutions, where you can craft personalized and relevant experiences based on the user’s web behavior. 
 
-To create a segment of visitors who have added products to their cart but not placed an order and then send it to the Experience Cloud:
+To create a segment of visitors who have added products to their cart but not placed an order:
 
 1. Open the Segment Builder.
-1. From the **Components** toolbar, scroll down to the **Segments** and click the plus icon to create a new segment. 
+1. From the **Components** toolbar, scroll down to **Segments** and click the plus icon to create a new segment. 
 1. Name the segment and add criteria for Visits that abandon a cart.
 1. Name your segment `Cart Abandonment Visits`.
-1. Search for `Abandon Cart` in the **Components** search box. Adobe includes an **Abandon Cart** segment template for you to use as a starting point. These templates are identified by the folder-with-magnifying-glass icons. This template matches the need to show visits that added an item to their cart and then did not place an order.
+1. Search for **Abandon Cart** in the **Components** search box. Adobe includes an **Abandon Cart** segment template for you to use as a starting point. These templates are identified by the folder-with-magnifying-glass icons. This template matches the need to show visits that added an item to their cart and then did not place an order.
 1. Drag the component into the segment definition. It should appear like this:
 
 *image here*
@@ -392,7 +391,7 @@ To create a segment of visitors who have added products to their cart but not pl
 To save the segment and share it with Experience Cloud:
 
 1. Select the check box option under the segment definition. In the suggested look-back window, specify 90 days.
-1. Click save. This shares an audience across Adobe Experience Cloud solutions. You can now use this to trigger emails in Campaign, show banner ads via Ad Cloud, or trigger a personalized offer the next time the visitor comes to your site via Target.
+1. Click **Save**. This shares an audience across Adobe Experience Cloud solutions. You can now use this to trigger emails in Campaign, show banner ads via Ad Cloud, or trigger a personalized offer the next time the visitor comes to your site via Target.
 
 ### Exclude fraud using virtual report suites
 
@@ -406,7 +405,7 @@ Consider setting up a VRS from initial implementation and using it continually, 
 
 Data Source import allows you to push offline data, such as cancelled orders and lead-to-revenue info, back to Adobe.
 
-To get the most out of this feature, make sure to capture an online transaction ID at the time of the online conversion. Then, you can batch upload offline data referencing that same transaction ID and the new data associates with the online activity related to that transaction.
+To get the most out of this feature, make sure to capture an online transaction ID at the time of the online conversion. Then, you can batch upload offline data referencing that same transaction ID and the new data will associate itself with the online activity related to that transaction.
 
 ### Roll up/clean up dimension data using Classifications
 
