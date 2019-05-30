@@ -242,7 +242,7 @@ In Analysis Workspace, the Marketing Channel report shows how users found your w
 
 Adobe includes many reports for traffic source attribution. For best results, organizations should implement them intelligently and curate them conscientiously. It also helps to enable the Marketing Channels reports and then hide other traffic source reports that might work at cross purposes. Perhaps this might include hiding referring domains or search engines.
 
-When setting up your Marketing Channels, review the [default list of social networks] (https://helpx.adobe.com/analytics/kb/list-social-networks.html):
+When setting up your Marketing Channels, review the [default list of social networks](https://helpx.adobe.com/analytics/kb/list-social-networks.html):
 
 On the Marketing Channels Report, find the Marketing Channel Instances metric.
 
@@ -394,7 +394,7 @@ To create a segment of visitors who have added products to their cart but not pl
 
 *image here*
 
-### Save segments and share it with Experience Cloud
+### Save segments and share them with Experience Cloud
 
 To save the segment and share it with Experience Cloud:
 
@@ -435,7 +435,7 @@ On the Project menu, click **Save**. This saves the project in your account and 
 
 If you have not already named your project, you are prompted to do this upon saving.
 
-### Share this report with other Adobe Analytics users
+### Share your report with other Adobe Analytics users
 
 Under the **Share** menu in the light-grey header, you can share with individual users and user groups (if you have set groups up).  
   
@@ -447,23 +447,13 @@ To save other users from having to scroll through a list of projects, you can se
 
 Instead of taking screenshots, you can export your project as a PDF and send it to your recipient. Click **Project** > **Download PDF**.
   
-### Email a report once or regularly
+### Email a report once or on a recurring basis
 
 Click **Share** > **Send File Now** to email this to recipients. To email on a recurring basis, click **Send File On Schedule** Check to make sure that your date range is dynamic when you set recurring reports, otherwise you will receive the same date range every time it sends.  
 
 ### Manage shared reports
 
 To manage reports that you are sharing with others (or that others are sharing with you), click **Components** > **Projects**. You can manage your dashboards, or Delete, Share, or Tag in Bulk.
-
-
-### Assisted (last click conversions) calculated metric
-
-An Assisted/Last Click Online Orders metric can be useful to understand at a glance whether a traffic channel (or other dimension value) is more likely to close a sale or to contribute earlier in the user’s conversion path (assist in a sale). It is a helpful way of quantifying a channel’s likelihood to open, close, or participate in a sale (or other conversion type).
-
-1. Open the Calculated Metric Builder and then drag **Order Assists (Report Participation)** and **Online Orders** into the builder. Set the metric type to **Numeric**, with two decimal places. Your new Calculated Metric should look like this:
-
-When the value of this Calculated Metric is between 1 and 0, the channel is more likely to close than to assist. The closer to 0 this is, the more this is true. If it is 1 exactly, the channel is equally likely to either assist or close. If it is greater than 1, the channel is more likely to assist than close. The further away from 1 it is, the more likely it is to assist. This is similar to other analytics definitions.
-
 
 ## You are ready to switch
 
