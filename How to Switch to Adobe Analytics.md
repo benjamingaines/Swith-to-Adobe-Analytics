@@ -179,8 +179,8 @@ If you do not already have a calculated metric in your project, you can create o
 1. Add the following title: **Page Views per Visit**.
 1. For **Format**, select **Decimal**.
 1. Increase the **Decimal Places** to 2. 
-1. Drag the Page Views metric to the Definition box. Then drag the **Visits/Vistors** metric to the same box under the first metric (wait until the blue line appears to drop it).
-1. Between the two metrics listed in the Definition, select the Divide operator (if not already selected).
+1. Drag the **Page Views** metric to the **Definition** box. Then drag the **Visits/Vistors** metric to the same box under the first metric (wait until the blue line appears to drop it).
+1. Between the two metrics listed in the **Definition**, select the Divide operator (if not already selected).
 1. Click **Save**. Note that the new calculated metric is added to the **Metrics** box. Anytime you make a change to the metric definition.
 
 ### Add metrics to visualizations
