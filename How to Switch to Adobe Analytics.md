@@ -67,7 +67,7 @@ To construct this report:
 
 *Reports Tab Image Here*
 
-2. Click **Content** > **Pages**. The **Pages** report appears and shows [dimensions] (https://marketing.adobe.com/resources/help/en_US/reference/dimensions.html), [metrics] (https://marketing.adobe.com/resources/help/en_US/sc/implement/ref-metrics.html), and page names.
+2. Click **Content** > **Pages**. The **Pages** report appears and shows [dimensions](https://marketing.adobe.com/resources/help/en_US/reference/dimensions.html), [metrics](https://marketing.adobe.com/resources/help/en_US/sc/implement/ref-metrics.html), and page names.
 
 *Pages Report Image Here*
 
@@ -81,11 +81,11 @@ To create a **Page Performance** visualization in Analysis Workspace:
 
 1. Click **Workspace** at the top left of the Analytics screen.
 1. Click the blue **Create New Project** button. 
-1. For your project, you can use a Template Project or a Blank Project. A blank project is a blank canvas you use to build your visualization. A template is a set of pre-configured reports, components, and visualizations. [Templates are helpful starting points] (https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/starter_projects.html) for building larger dashboards or analyses, and to help others see your insights more quickly. If your organization has an existing template, you can click that and explore the details that follow. Otherwise, click select the **Content Consumption-Web** template and then click **Create**. 
+1. For your project, you can use a Template Project or a Blank Project. A blank project is a blank canvas you use to build your visualization. A template is a set of pre-configured reports, components, and visualizations. [Templates are helpful starting points](https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/starter_projects.html) for building larger dashboards or analyses, and to help others see your insights more quickly. If your organization has an existing template, you can click that and explore the details that follow. Otherwise, click select the **Content Consumption-Web** template and then click **Create**. 
 
 *Template selection image here*
 
-4. Scroll down to find the **Top Pages** section on the **Content Consumption** screen. Your template includes visualization starting points, including this one for page content. The information in the visualizations is for demonstration purposes only and does not reflect any real data. Although many **Content** screens [often show dashboards] (https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/) at the top that summarize numerous metrics, this template first shows a flow visualization at the top. This screen can be customized to present visualizations in any order.
+4. Scroll down to find the **Top Pages** section on the **Content Consumption** screen. Your template includes visualization starting points, including this one for page content. The information in the visualizations is for demonstration purposes only and does not reflect any real data. Although many **Content** screens [often show dashboards](https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/) at the top that summarize numerous metrics, this template first shows a flow visualization at the top. This screen can be customized to present visualizations in any order.
 
 *Top Pages Visualization Image Here*
 
@@ -101,9 +101,9 @@ Your organization may have different report suites set up for different sites an
 
 One key difference between Adobe's data collection method and many other tools is that you specify which report suite(s) to send data to when you send the data. This is different from other popular tools that typically send all your data to one collection location and then filter that down to create different views or profiles via the admin interface. You cannot shift data between report suites.
 
-You can also build [virtual] (https://marketing.adobe.com/resources/help/en_US/reference/virtual-report-suites.html) report suites, which let you build filtered views from a normal report suite.
+You can also build [virtual](https://marketing.adobe.com/resources/help/en_US/reference/virtual-report-suites.html) report suites, which let you build filtered views from a normal report suite.
 
-For more information on report suites, see the [Report Suites Manager] (https://marketing.adobe.com/resources/help/en_US/reference/report_suites_admin.html) help.
+For more information on report suites, see the [Report Suites Manager](https://marketing.adobe.com/resources/help/en_US/reference/report_suites_admin.html) help.
 
 ### Using Workspace toolbars
 
@@ -111,9 +111,9 @@ Analysis Workspace includes three toolbars that appear according to the icon you
 
 *Toolbar icons image here*
 
-*Panels toolbar: Shows options for creating the panels that hold your visualizations
-*Visualizations toolbar: Shows options for structuring or customizing your visualizations according to form
-*Components toolbar: Shows options for adding components to visualizations
+* Panels toolbar: Shows options for creating the panels that hold your visualizations
+* Visualizations toolbar: Shows options for structuring or customizing your visualizations according to form
+* Components toolbar: Shows options for adding components to visualizations
 
 ### Customize your visualizations
 
@@ -121,7 +121,7 @@ The following section describes ways to customize your screen and visualizations
 
 1. To customize the name of this project, click the title in the uppper left of the screen and type the new name.
 
-1. To change the settings of your project, or to save, share, and edit it, click the applicable menu beneath the title and select the applicable option. Each menu item includes [keyboard shortcuts] (https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/fa_shortcut_keys.html) as well.
+1. To change the settings of your project, or to save, share, and edit it, click the applicable menu beneath the title and select the applicable option. Each menu item includes [keyboard shortcuts](https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/fa_shortcut_keys.html) as well.
 
 *Project title and menus image here*
 
@@ -139,7 +139,7 @@ A Panel is a collection of visualizations. You might have many visualizations th
 
 *Content Consumption panel image here*
 
-If you click the drop down arrow on the panel, it collapses to show other panels you have created (in this case, none). If you click the arrow again, it expands the panel to fully display on the screen. To add more panels, click **Insert** > **New Blank Panel** and choose the type of panel you want to add. For more information on panels, see the [Panels] (https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/panels.html) help.
+If you click the drop down arrow on the panel, it collapses to show other panels you have created (in this case, none). If you click the arrow again, it expands the panel to fully display on the screen. To add more panels, click **Insert** > **New Blank Panel** and choose the type of panel you want to add. For more information on panels, see the [Panels](https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/panels.html) help.
 
 ### Understanding Content Reports
 
@@ -147,16 +147,16 @@ This section describes elements in the page performance visualization (entitled 
 
 *Pages report image here*
 
-This type of visualization is called a [Freeform Table] (https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/freeform-table.html). You can easily build or modify these tables by dragging and dropping elements on to them. This table shows traffic metrics for the **Pages** dimension, including the following:
+This type of visualization is called a [Freeform Table](https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/freeform-table.html). You can easily build or modify these tables by dragging and dropping elements on to them. This table shows traffic metrics for the **Pages** dimension, including the following:
 
-* [Page Views] (https://marketing.adobe.com/resources/help/en_US/reference/metrics_page_view.html)
-* [Visits] (https://marketing.adobe.com/resources/help/en_US/reference/metrics_visit.html)
-* [Time Spent per Visit] (https://marketing.adobe.com/resources/help/en_US/reference/metrics_time_spent.html)
-* [Entries] (https://marketing.adobe.com/resources/help/en_US/reference/metrics_entries.html)
-* [Bounce Rate] (https://marketing.adobe.com/resources/help/en_US/reference/metrics_bounce_rate.html)
-* [Exit Rate] (https://marketing.adobe.com/resources/help/en_US/reference/metrics_exits.html)
+* [Page Views](https://marketing.adobe.com/resources/help/en_US/reference/metrics_page_view.html)
+* [Visits](https://marketing.adobe.com/resources/help/en_US/reference/metrics_visit.html)
+* [Time Spent per Visit](https://marketing.adobe.com/resources/help/en_US/reference/metrics_time_spent.html)
+* [Entries](https://marketing.adobe.com/resources/help/en_US/reference/metrics_entries.html)
+* [Bounce Rate](https://marketing.adobe.com/resources/help/en_US/reference/metrics_bounce_rate.html)
+* [Exit Rate](https://marketing.adobe.com/resources/help/en_US/reference/metrics_exits.html)
 
-For more metrics descriptions, see the [Metrics] (https://marketing.adobe.com/resources/help/en_US/reference/metrics.html) help topic.
+For more metrics descriptions, see the [Metrics](https://marketing.adobe.com/resources/help/en_US/reference/metrics.html) help topic.
 
 ***About Bounce Rate***
 
@@ -202,7 +202,7 @@ Note that the online revenue is attributed to the order confirmation page. This 
 
 ### Page value: add participation metrics
 
-[Participation] (https://marketing.adobe.com/resources/help/en_US/analytics/calcmetrics/participation_metric.html) is a unique type of attribution available for all metrics in Adobe Analytics. Participation models assign full credit for conversions to all dimension values that a user touched prior to the conversion. For instance, if a user spends $100 on your site and hits 10 pages during the visit, Revenue Participation gives $100 credit to each of those 10 pages. You can set the look-back window to be during the same visit, or for the same visitor during the reporting date range. This not only useful, but critical when trying to accurately understand how different pages, campaigns, search terms, etc. contribute to ultimate conversion.
+[Participation](https://marketing.adobe.com/resources/help/en_US/analytics/calcmetrics/participation_metric.html) is a unique type of attribution available for all metrics in Adobe Analytics. Participation models assign full credit for conversions to all dimension values that a user touched prior to the conversion. For instance, if a user spends $100 on your site and hits 10 pages during the visit, Revenue Participation gives $100 credit to each of those 10 pages. You can set the look-back window to be during the same visit, or for the same visitor during the reporting date range. This not only useful, but critical when trying to accurately understand how different pages, campaigns, search terms, etc. contribute to ultimate conversion.
 
 Because full credit is assigned to each dimensional value the visitor hits along the way, it is not possible to provide a sum for participation metrics to understand the total number of conversions. Such a count would be too high to be useful. Instead, you can use the value in the column header, which deduplicates the data. Participation metrics are retroactive, applying past data to the new metric.
 
@@ -241,7 +241,7 @@ In Analysis Workspace, the Marketing Channel report shows how users found your w
 
 Adobe includes many reports for traffic source attribution. For best results, organizations should implement them intelligently and curate them conscientiously. It also helps to enable the Marketing Channels reports and then hide other traffic source reports that might work at cross purposes. Perhaps this might include hiding referring domains or search engines.
 
-When setting up your Marketing Channels, review the [default list of social networks:] (https://helpx.adobe.com/analytics/kb/list-social-networks.html).
+When setting up your Marketing Channels, review the [default list of social networks:](https://helpx.adobe.com/analytics/kb/list-social-networks.html).
 
 On the Marketing Channels Report, find the Marketing Channel Instances metric.
 
@@ -312,7 +312,7 @@ In other analytics tools, you can only do this for *eCommerce + Goals for Channe
 
 ### Attribution IQ
 
-Adobe's Attribution IQ feature allows you to apply custom attribution models to any of your reports. This is unique only to Adobe Analytics. You can use this to understand how different marketing efforts initiate, assist, and close deals for you. Additionally, it can provide insights on linear allocation, J-Curves, time decay, and attribution models within attribution models. To read more on this feature, see [Attribution IQ help] (https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/attribution.html).
+Adobe's Attribution IQ feature allows you to apply custom attribution models to any of your reports. This is unique only to Adobe Analytics. You can use this to understand how different marketing efforts initiate, assist, and close deals for you. Additionally, it can provide insights on linear allocation, J-Curves, time decay, and attribution models within attribution models. To read more on this feature, see [Attribution IQ help](https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/attribution.html).
 
 
 ### Integrate media data
