@@ -413,23 +413,19 @@ You can import lookup tables of metadata (data about your data) to a dimension i
 
 This is a powerful and often underutilized feature, but do not be intimidated. If you can use a pivot table, you can grasp the concept quickly. Speak with your Analytics administrator to understand what you have available to you, since your implementation is highly customized to your business.
 
-## Helpful Tips
-
-This section provides instructions for some of the most useful and most common actions for working with Adobe Analytics.
-
 ## Saving and socializing your report
 
 This section describes some standard options to store and distribute Analysis Workspace Projects.
 
 ### Save your project
 
-On the Project menu, click **Save**. This saves the project in your account and you can come back to it whenever you would like. It is not shared with any other users unless you explicitly grant them access.
+On the **Project** menu, click **Save**. This saves the project in your account and you can come back to it whenever you like. It is not shared with any other users unless you specifically grant them access.
 
 If you have not already named your project, you are prompted to do this upon saving.
 
 ### Share your report with other Adobe Analytics users
 
-Under the **Share** menu in the light-grey header, you can share with individual users and user groups (if you have set groups up).  
+Click the **Share** menu, in the light-grey header, and choose an option to share with individual users and user groups (if you have set groups up).  
   
 ### Point users directly to a specific report
 
@@ -441,7 +437,7 @@ Instead of taking screenshots, you can export your project as a PDF and send it 
   
 ### Email a report once or on a recurring basis
 
-Click **Share** > **Send File Now** to email this to recipients. To email on a recurring basis, click **Send File On Schedule** Check to make sure that your date range is dynamic when you set recurring reports, otherwise you will receive the same date range every time it sends.  
+Click **Share** > **Send File Now** to email a report to recipients. To email on a recurring basis, click **Send File On Schedule** Check to make sure that your date range is dynamic when you set recurring reports, otherwise you will receive the same date range every time it sends.  
 
 ### Manage shared reports
 
