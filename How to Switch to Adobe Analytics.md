@@ -16,7 +16,6 @@ Additionally, this guide provides step-by-step instructions for working with fea
 *Marketing Channels Reports
 *Products and Funnel Reports
 
-
 ## Requirements
 
 You can read and learn from this guide with no special requirements. However, to perform  steps shown in this guide yourself, you will need the following:
@@ -40,12 +39,12 @@ Make sure that your Analytics is fully implemented with web properties.
 
 Adobe Analytics provides two different visual tools to analyze your business: Analysis Workspace and Reports and Analytics. In Analysis Workspace, you work with visualizations that correspond to reports in different tools. These visualizations show key metrics for your web business. The visualizations are not only more flexible and robust in displaying metrics, they are also easier to create. They also provide much more detail than traditional reports. You create visualizations by dragging and dropping data tables,dimensions, metrics, segments and time periods on the Analysis Workspace user interface. You can also extend visualizations with right-click options. For more information on the features of Analysis Workspace visualizations, see the [Analysis Workspace Overview](https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/). Adobe's Reports and Analytics capabilities also correspond with report types in other tools. Both tools offer unique capabilities that go beyond simply measuring page traffic so that you can better understand how pages convert users. 
 
-## Comparing report types
+## Site content reports
 
-This is a high-level section that Russ mentioned he might author.
+Site content reports include ways to analyze page traffic and page conversions and to create calculated metrics and *assist* metrics. This section explains how site content reports work in Adobe Analytics and shows the tools and interface for creating the reports and visualizations. 
 
 
-## All Pages Report
+### All Pages Report
 
 You can construct either a report or a visualization in Analytics that is similar to an **All Pages Report** in other tools. This report provides content performanc--one of the fundamentals of web analytics. This section describes the following:
 
@@ -60,7 +59,7 @@ Additionally, by creating these in Analytics, you learn:
 1. How the content on your pages contributes to conversion
 1. How to share your report with others
 
-## Construct a Pages report
+#### Construct a Pages report
 
 To construct this report: 
 
@@ -72,7 +71,7 @@ To construct this report:
 
 **Pages Report Image Here**
 
-## Create a visualization for Pages
+#### Create a visualization for Pages
 
 Analysis Workspace provides an easier way to see all types of available dimensions and metrics. It functions similar to creating basic repors but greatly enhances the speed, flexibility, and customizability of visualizing and analyzing your data. 
 
@@ -106,7 +105,7 @@ You can also build [virtual] (https://marketing.adobe.com/resources/help/en_US/r
 
 For more information on report suites, see the [Report Suites Manager] (https://marketing.adobe.com/resources/help/en_US/reference/report_suites_admin.html) help.
 
-## Working with Workspace toolbars
+### Working with Workspace toolbars
 
 Analysis Workspace includes three toolbars that appear according to the icon you select on the far left of the screen.*
 
@@ -116,7 +115,7 @@ Analysis Workspace includes three toolbars that appear according to the icon you
 *Visualizations toolbar: Shows options for structuring or customizing your visualizations according to form
 *Components toolbar: Shows options for adding components to visualizations
 
-## Customize your visualizations
+### Customize your visualizations
 
 The following section describes ways to customize your screen and visualizations. The typical screen actions associated with customizing your visualizations include dragging and dropping screen elements and right-clicking visualization items to select other options and actions. 
 
@@ -142,7 +141,7 @@ A Panel is a collection of visualizations. You might have many visualizations th
 
 If you click the drop down arrow on the panel, it collapses to show other panels you have created (in this case, none). If you click the arrow again, it expands the panel to fully display on the screen. To add more panels, click **Insert** > **New Blank Panel** and choose the type of panel you want to add. For more information on panels, see the [Panels] (https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/panels.html) help.*
 
-## Understanding Content Reports
+### Understanding Content Reports
 
 This section describes elements in the page performance visualization (entitled **Top Pages** in this template). Refer to the following image to understand the details of the report.
 
@@ -165,7 +164,7 @@ Bounce Rate is a common KPI that is used to help measure the effectiveness and t
 
 To compare like metrics across tools, use the **Single Page Visits** metric in Adobe Analytics instead of Bounces. The **Single Page Visits** metric includes the total number of visits that only included one page view, or visits that enter the website but do not include a click to another page.
 
-## Create a Calculated Metric
+### Create a calculated metric
 
 Most out-of-the box metrics in Adobe Analytics provide counts of things: how many pages viewed, how many files downloaded, how many seconds visitors spend on the site. Other tools, Google Analytics in particular, often show *index metrics* or *calculated metrics* by default.
 
@@ -183,14 +182,14 @@ If you do not already have a calculated metric in your project, you can create o
 1. Between the two metrics listed in the Definition, select the Divide operator (if not already selected).
 1. Click **Save**. Note that the new calculated metric is added to the **Metrics** box. Anytime you make a change to the metric definition.
 
-## Add metrics to visualizations
+### Add metrics to visualizations
 
 To add your new calculated metric to the page performance visualization (or **Top Pages** free-form table):
 
 1. Expand the **Content Consumption** panel, if not already expanded. 
 1. Drag your new calculated metric from the Metrics box to the page performance freeform table header. The blue flag that appears as you drag the metric indicates where the column is added when you drop it. The visualization now includes a new column with new metric data.
 
-## Page value: add conversion metrics
+### Page value: add conversion metrics
 
 Conversion metrics show data about success events, such as purchases, downloads, or any other action that you want users to take on your website.
 To add conversion metrics to the page performance visualization (or **Top Pages** free-form table) you can refer to the following example procedure:
@@ -201,7 +200,7 @@ To add conversion metrics to the page performance visualization (or **Top Pages*
 
 Note that the online revenue is attributed to the order confirmation page. This is because the pages report uses a *Last Touch attribution* model. 
 
-## Page value: add participation metrics
+### Page value: add participation metrics
 
 [Participation] (https://marketing.adobe.com/resources/help/en_US/analytics/calcmetrics/participation_metric.html) is a unique type of attribution available for all metrics in Adobe Analytics. Participation models assign full credit for conversions to all dimension values that a user touched prior to the conversion. For instance, if a user spends $100 on your site and hits 10 pages during the visit, Revenue Participation gives $100 credit to each of those 10 pages. You can set the look-back window to be during the same visit, or for the same visitor during the reporting date range. This not only useful, but critical when trying to accurately understand how different pages, campaigns, search terms, etc. contribute to ultimate conversion.
 
@@ -219,25 +218,18 @@ To add a participation metric:
 
 You can also create participation that mimics the Total Page Value, as found in other tools, except that you can put participation in any report you want, for any conversion metric you track. For example, you can use Calculated Metrics to divide `Online Revenue (Participation)` by `Visits`. Similarly, you can also divide `Online Orders (Participation)` by `Visits` to understand the page conversion rate. Unlike the metric in other tools, which is bounded to Page Value report, you can use thisfor *any metric in Adobe Analytics.*
 
-## Content Velocity
+### Content velocity
 
 Content Velocity is a pre-set calculated metric in Analysis Workspace. This metric determines how many page views each page generates. It is calculated by dividing Page Views (Participation) by Page Views. This can be a great way of determining which content is most likely to generate engagement with additional content. 
 
-## Marketing Channel Reports
+## Marketing channel reports
 
-In Analysis Workspace, the Marketing Channel report shows how users found your website. This includes both tagged (Paid Search, Email) and untagged (Natural Search, Organic Social Referrers) traffic. If you want a pie-chart of traffic, of online orders, or of online revenue, the marketing channel report is best.  
-  
-The **Components** menu includes a Last Touch Channel and a First Touch Channel report. Last Touch Channel is the same thing as Marketing Channel, *in Workspace*. First Touch Channel is the Acquisition Channel. 
+In Analysis Workspace, the Marketing Channel report shows how users find your website. This includes both tagged (Paid Search, Email) and untagged (Natural Search, Organic Social Referrers) traffic. If you want a pie-chart of traffic, of online orders, or of online revenue, the marketing channel report is best-suited for this purpose. Compared to other tools, Adobe Analytics provides more flexibility on how to measure campaigns and traffic channels. This section shows how you can use Adobe Analytics tools to analyze campaign performance, analyze campaign performance to conversions, and analyze how to measure channels that *assist* conversions. It also includes information on unique Analytics features that enhance your insights into these reports.
 
-The **Components** menu includes a Last Touch Channel and a First Touch Channel report. Last Touch Channel is the same thing as Marketing Channel, *in Workspace*. First Touch Channel is the Acquisition Channel. 
+***About first and last touch channels***
 
-This section includes the following topics:
+The **Components** menu includes a Last Touch Channel and a First Touch Channel report. In Workspace, the Last Touch Channel is the same as Marketing Channel. The First Touch Channel is the Acquisition Channel. 
 
-1. How Adobe measures traffic source contribution to traffic and conversion; how this methodology differs from other tools; and how it can be customized
-2. How to build and easily customize reports that show campaign contributions to traffic and conversion
-3. How Adobe Analytics' built-in capabilities enhance and extend media data
-
-Compared to other tools, Adobe Analytics provides more flexibility on how to measure campaigns and traffic channels. This section explains core concepts related to marketing channel measurement and shows features that Adobe provides for this. It also shows how Adobe’s Calculated Metric capabilities can improve speed to insight compared with other platforms. It also includes a brief overview of some advanced features you may want to explore further.
 
 **Campaign Tracking in Adobe Analytics**
 
@@ -259,7 +251,7 @@ Instances tells us the total number of times that a user clicked to your website
   
 Adobe also gives you more flexibility about your attribution window than most other tools. The windows aren't channel-specific, but the lookback window is up to you. No six-month attribution window limit exists, as in other analytics tools. You will see a larger percentage of Direct users in Adobe than in others, but this is easily managed with tagged campaigns.
 
-## Analyze Campaign Performance with Marketing Channels
+### Analyze Campaign Performance with Marketing Channels
 
 It is important to understand not just the total number of Paid Search visits and conversions, but also which campaigns drove those conversions. To dive deeper into an individual channel performance, use the Marketing Channel Detail report. This is generally the only report that has the same attribution model as Marketing Channels.
   
@@ -273,13 +265,13 @@ To add this, in **Component** search, type `Marketing Channel Detail`. Drag and 
 
 You can add breakdowns to multiple primary dimensions in this report, and in the same way that you added a breakdown to the primary dimension, you can also break down secondary dimensions (and tertiary dimensions, and beyond). This is called “infinite breakdowns” in Adobe Analytics and it’s a great way to dive really deep into your data.
 
-**Analyze Total Channel Contribution to Conversions**
+### Analyze Total Channel Contribution to Conversions
 
 Previously, the Participation attribution model on the **Pages** report helped us to understand the average value of specific content. Similarly, we can attribute all Online Revenue to every page that a user interacted with during a visit prior to converting. This can be used on any dimension, to attribute all Online Revenue to every dimension value that a user touches during their visit. This is the *Visit Participation* model works.
 
 Similarly, *Report Participation* allows you to attribute revenue back to all dimension values that a user touched prior to conversion *across the whole report date range*. Report Participation is an *Any Touch* attribution model.
 
-**Add Online Orders (Report Participation) to the Last Touch Channel report**
+**Add Online Orders (Report Participation) to the last touch channel report**
 
 1. Find the **Online Orders (Report Participation)** metric.
 
@@ -291,7 +283,7 @@ You can read this report as: *Each click (instances) represents this amount from
 
 Remember, as with the Visit Participation metric, these values cannot be summed. The same order in Participation models is attributed to multiple Marketing Channels.
 
-## Analyze how channels assist conversions
+### Analyze how channels assist conversions
 
 If you want to see the total number of Online Orders that each channel participated in but was not the last touch--sometimes referred to as *assists*, you can use Adobe's Attribution IQ. This feature allows for advanced attribution modeling. To use this feature:
 
@@ -318,44 +310,28 @@ If you sum up **Online Orders** with **Online Order Assists**, it should equal *
 
 In other analytics tools, you can only do this for *eCommerce + Goals for Channels & Campaigns*. In Adobe Analytics, you can do this for *all* dimension values and for *all* events.
 
-## Attribution IQ
+### Attribution IQ
 
 Adobe's Attribution IQ feature allows you to apply custom attribution models to any of your reports. This is unique only to Adobe Analytics. You can use this to understand how different marketing efforts initiate, assist, and close deals for you. Additionally, it can provide insights on linear allocation, J-Curves, time decay, and attribution models within attribution models. To read more on this feature, see [Attribution IQ help] (https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/attribution.html).
 
 
-## Integrate Media Data
+### Integrate media data
 
-Something that Google Analytics likes to brag about is their integration with Google Ads, which allows you to pull impression, click, cost, and view-through information into Google Analytics. Which, we agree, is clutch. But it only works with Google. Because, as we all know, Google equals the internet.
+Adobe provides a number of ways to integrate your media data into Analytics. This includes the integration with Adobe Media Optimizer and Adobe Ad Cloud, as well as Target and Campaign. Analytics includes a data connector for DoubleClick, which allows you to pull in DoubleClick data, including view-through conversions. Many third-party email platforms have Data Connectors of their own. Additionally, a Adobe has a new feature called Advertising Analytics, which lets you pull impression, click, and cost data from Google, Bing, and Yahoo!.
 
-Adobe has a number of ways to integrate your media data into Analytics too. First, of course, is the integration with Adobe Media Optimizer and Adobe Ad Cloud. This integration is pretty much automatic. Ditto Adobe Campaign for email.
+## Products and funnel reports
 
-There is also a Data Connector for DoubleClick which allows you to pull in DoubleClick data, including view-through conversions. Additionally, many third-party email platforms have Data Connectors of their own.
+If you are using a different analytics tool, you probably have to find work-arounds to report on your sales funnels *exactly* how they should be measured. With Adobe Analytics, advanced analysis functionality is already included, which allows you to define unlimited and customizable product and funnel reports for your eCommerce and content sites. This section shows you how to measure product performance by using a standard eCommerce checkout funnel. 
 
-Finally, a relatively new feature called Advertising Analytics lets you pull impression, click, and cost data from Google, Bing, and Yahoo! into Adobe Analytics. We’ve included links to all of these within the forum post.
+The instructions also include:
 
-# Lesson 3: Products and Funnel Reports
+1. New ways to build ad hoc product and conversion funnel reports
+2. How to pass visitor data into other Adobe solutions for retargeting
+3. Options to include offline data in Adobe Analytics
 
-## Objectives
 
-1. Get hands-on with new ways to build ad hoc product and conversion funnel reports
-2. Learn how to pass visitor data into other Adobe solutions for retargeting
-3. Hear about options to include offline data in Adobe Analytics
+### Analyze product performance for desktop visitors
 
-## Lesson Context
-
-If you’re used to Google Analytics (especially the free version), you are probably also used to having to find painful and time-intensive work-arounds to report on your sales funnels *exactly* how they should be measured. Good news: those days are all behind you. Adobe Analytics bakes in advanced analysis functionality that allows eCommerce & content sites alike to define unlimited and fully customizable product and funnel reports.
-
-This lesson will teach analysts how to use Adobe Analytics to measure product performance, with a focus on measuring a standard eCommerce checkout funnel. While we will talk through the standard eCommerce metrics, we will also call out how this reporting can be customized to measure other types of funnels like registration flows.
-
-Adobe Analytics allows you to do more than just *report* on data. Easily take action on your data by passing segments of users to tools like Adobe Campaign or Adobe Target. This lesson will discuss how to create these segments and how to share them with other Adobe solutions.
-
-## Exercise 3.1: Analyze Product Performance for Desktop Visitors
-
-The next panel in our custom template looks at product performance. For those of you that don't run an eCommerce site, most of these concepts will still be valuable to you—please stay for just a short while longer!
-
-### Find the Products Performance Report in the Summit Lab Template
-
-Fancy. If you’re used to products reporting in other analytics tools, this should look familiar. The concepts are about the same. But there’s something else on this report that might be throwing you off: “Unspecified” is showing up as a dimension line item.
 
 > **What in tarnation is "Unspecified?"**<br><br>
 > On many reports you may see a row labeled "Unspecified", or "None". Most of the time, this can safely be ignored.<br><br>
@@ -365,7 +341,7 @@ Fancy. If you’re used to products reporting in other analytics tools, this sho
 
 ![30](./images/image30.png)
 
-1. Find the “Desktop Visitors” segment in the left rail.
+1. Find the **Desktop Visitors** segment in the **Components** toolbar.
 
     > **What's a Segment?**<br><br>
     > A segment lets you filter a report by something that's not on that report. For instance, you could apply a segment to a Products report to show only mobile device activity, even though nothing on the Products report tells you about device type.<br><br>
