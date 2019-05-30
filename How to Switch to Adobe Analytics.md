@@ -12,9 +12,9 @@ In this guide, you will learn:
 
 Additionally, this guide provides step-by-step instructions for working with features in the following report types:
 
-*Site Content Reports
-*Marketing Channels Reports
-*Products and Funnel Reports
+* Site Content Reports
+* Marketing Channels Reports
+* Products and Funnel Reports
 
 ## Requirements
 
@@ -65,11 +65,11 @@ To construct this report:
 
 1. In Adobe Analytics, click the **Reports** tab and then click **View All Reports**. Note the menu showing all the reports set up in your account. These menus, and the reports within them, are your reports suite and are customized to your specific Adobe Analytics implementation.
 
-**Reports Tab Image Here**
+*Reports Tab Image Here*
 
 2. Click **Content** > **Pages**. The **Pages** report appears and shows [dimensions] (https://marketing.adobe.com/resources/help/en_US/reference/dimensions.html), [metrics] (https://marketing.adobe.com/resources/help/en_US/sc/implement/ref-metrics.html), and page names.
 
-**Pages Report Image Here**
+*Pages Report Image Here*
 
 #### Create a visualization for Pages
 
@@ -83,17 +83,17 @@ To create a **Page Performance** visualization in Analysis Workspace:
 1. Click the blue **Create New Project** button. 
 1. For your project, you can use a Template Project or a Blank Project. A blank project is a blank canvas you use to build your visualization. A template is a set of pre-configured reports, components, and visualizations. [Templates are helpful starting points] (https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/starter_projects.html) for building larger dashboards or analyses, and to help others see your insights more quickly. If your organization has an existing template, you can click that and explore the details that follow. Otherwise, click select the **Content Consumption-Web** template and then click **Create**. 
 
-**Template selection image here**
+*Template selection image here*
 
 4. Scroll down to find the **Top Pages** section on the **Content Consumption** screen. Your template includes visualization starting points, including this one for page content. The information in the visualizations is for demonstration purposes only and does not reflect any real data. Although many **Content** screens [often show dashboards] (https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/) at the top that summarize numerous metrics, this template first shows a flow visualization at the top. This screen can be customized to present visualizations in any order.
 
-**Top Pages Visualization Image Here**
+*Top Pages Visualization Image Here*
 
 ***About Report Suites***
 
 For this template, the fictitious data is based on the report suite showing in the **Report Suite Selector**. Click on the selector to choose a different report suite or continue with the `Cross-Industry Matisoft Data` report suite that appears with the template. None of the report suites associated with the templates have real data.
 
-**Report Suite Selector image here**
+*Report Suite Selector image here*
 
 In Adobe Analytics, a report suite is the repository where you send your data and from which you pull reports. Usually, a report suite collects data from one website. This is similar to a **View** or a **Profile** in other analytics tools.
 
@@ -105,11 +105,11 @@ You can also build [virtual] (https://marketing.adobe.com/resources/help/en_US/r
 
 For more information on report suites, see the [Report Suites Manager] (https://marketing.adobe.com/resources/help/en_US/reference/report_suites_admin.html) help.
 
-### Working with Workspace toolbars
+### Using Workspace toolbars
 
 Analysis Workspace includes three toolbars that appear according to the icon you select on the far left of the screen.*
 
-**Toolbar icons image here**
+*Toolbar icons image here*
 
 *Panels toolbar: Shows options for creating the panels that hold your visualizations
 *Visualizations toolbar: Shows options for structuring or customizing your visualizations according to form
@@ -123,38 +123,38 @@ The following section describes ways to customize your screen and visualizations
 
 1. To change the settings of your project, or to save, share, and edit it, click the applicable menu beneath the title and select the applicable option. Each menu item includes [keyboard shortcuts] (https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/fa_shortcut_keys.html) as well.
 
-**Project Title and menus image here**
+*Project title and menus image here*
 
 3. On the left side of the screen, note the **Component** toolbar, which contains groupings for **Dimensions**, **Metrics**, **Segments**, and **Time**. These components are all available to use in your visualizations. The **Dimensions** grouping is expandable into sub-components. Under **Dimensions**, click the **Page** arrow **>** that appears when you hover over it. The **Page Items** then appear as sub-components.
 
-**Page arrow image here**
+*Page arrow image here*
 
-5. Select the date range for your visualization. Click the Date Range in the upper right of the screen to open the Date Picker. The range you select here applies to the entire panel in this Analysis Workspace project. This template defaults to the last month across all panels.
+4. Select the date range for your visualization. Click the Date Range in the upper right of the screen to open the Date Picker. The range you select here applies to the entire panel in this Analysis Workspace project. This template defaults to the last month across all panels.
 
-**Date Picker image here**
+*Date Picker image here*
 
 ***About Panels***
 
 A Panel is a collection of visualizations. You might have many visualizations that you want to group in different categories, but also keep in the same project. To do this, you can create multiple panels that  hold the visualizations that you move to them. For example, the Content Consumption template contains only one panel--called Content Consumption.
 
-**Content Consumption panel image here**
+*Content Consumption panel image here*
 
-If you click the drop down arrow on the panel, it collapses to show other panels you have created (in this case, none). If you click the arrow again, it expands the panel to fully display on the screen. To add more panels, click **Insert** > **New Blank Panel** and choose the type of panel you want to add. For more information on panels, see the [Panels] (https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/panels.html) help.*
+If you click the drop down arrow on the panel, it collapses to show other panels you have created (in this case, none). If you click the arrow again, it expands the panel to fully display on the screen. To add more panels, click **Insert** > **New Blank Panel** and choose the type of panel you want to add. For more information on panels, see the [Panels] (https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/panels.html) help.
 
 ### Understanding Content Reports
 
 This section describes elements in the page performance visualization (entitled **Top Pages** in this template). Refer to the following image to understand the details of the report.
 
-**Pages report image here**
+*Pages report image here*
 
 This type of visualization is called a [Freeform Table] (https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/freeform-table.html). You can easily build or modify these tables by dragging and dropping elements on to them. This table shows traffic metrics for the **Pages** dimension, including the following:
 
-*[Page Views] (https://marketing.adobe.com/resources/help/en_US/reference/metrics_page_view.html)
-*[Visits] (https://marketing.adobe.com/resources/help/en_US/reference/metrics_visit.html)
-*[Time Spent per Visit] (https://marketing.adobe.com/resources/help/en_US/reference/metrics_time_spent.html)
-*[Entries] (https://marketing.adobe.com/resources/help/en_US/reference/metrics_entries.html)
-*[Bounce Rate] (https://marketing.adobe.com/resources/help/en_US/reference/metrics_bounce_rate.html)
-*[Exit Rate] (https://marketing.adobe.com/resources/help/en_US/reference/metrics_exits.html)
+* [Page Views] (https://marketing.adobe.com/resources/help/en_US/reference/metrics_page_view.html)
+* [Visits] (https://marketing.adobe.com/resources/help/en_US/reference/metrics_visit.html)
+* [Time Spent per Visit] (https://marketing.adobe.com/resources/help/en_US/reference/metrics_time_spent.html)
+* [Entries] (https://marketing.adobe.com/resources/help/en_US/reference/metrics_entries.html)
+* [Bounce Rate] (https://marketing.adobe.com/resources/help/en_US/reference/metrics_bounce_rate.html)
+* [Exit Rate] (https://marketing.adobe.com/resources/help/en_US/reference/metrics_exits.html)
 
 For more metrics descriptions, see the [Metrics] (https://marketing.adobe.com/resources/help/en_US/reference/metrics.html) help topic.
 
@@ -245,7 +245,7 @@ When setting up your Marketing Channels, review the [default list of social netw
 
 On the Marketing Channels Report, find the Marketing Channel Instances metric.
 
-**Marketing Channel Instance image here**
+*Marketing Channel Instance image here*
 
 Instances tells us the total number of times that a user clicked to your website and the Marketing Channel changed. Similar to other analytic tools, the Marketing Channel persists beyond the initial click-through until the user clicks through from another campaign or referring domain. *Visits* here means the total number of visits where the most recent Marketing Channel was, such as Email. Therefore, “Marketing Channel Instances” here gives the total number of clicks from Email.  
   
@@ -259,7 +259,7 @@ There may be additional reports in your implementation based on Marketing Channe
   
 The Marketing Channel Detail report shows you a second-level of granularity for each Marketing Channel. This is customized to each Channel, in each Adobe Analytics implementation. Typically, this is set to show the campaign tracking code for all tagged marketing channels, the referrer for all channels based on referrers (such as Organic Social or Organic Search), and the entry page name when neither of these exist (such as Direct or Mobile App). This is also worth verifying with your Analytics administrator. 
 
-**Add Marketing Channel Detail as a Secondary Dimension**
+*Add Marketing Channel Detail as a Secondary Dimension*
 
 To add this, in **Component** search, type `Marketing Channel Detail`. Drag and drop this component on top of **Email**.
 
@@ -271,13 +271,13 @@ Previously, the Participation attribution model on the **Pages** report helped u
 
 Similarly, *Report Participation* allows you to attribute revenue back to all dimension values that a user touched prior to conversion *across the whole report date range*. Report Participation is an *Any Touch* attribution model.
 
-**Add Online Orders (Report Participation) to the last touch channel report**
+*Add Online Orders (Report Participation) to the last touch channel report*
 
 1. Find the **Online Orders (Report Participation)** metric.
 
 2. Add it to the Marketing Channels Report.
 
-**image here**
+*image here*
 
 You can read this report as: *Each click (instances) represents this amount from Print ads. Print ads were the last-touch channel for 416 total Online Orders, but participated in 5.3K total Online Orders (13% of site total).*
 
@@ -296,13 +296,13 @@ If you want to see the total number of Online Orders that each channel participa
 1. Select **Visitor (Reporting Window)** as the Lookback Window.
 1. Click **Apply**. Your metric definition should look like this:
 
-  **image here**
+*image here*
 
 9. Find **Online Orders** in the toolbar and add it underneath the **Online Orders (Participation|Visitor)** component.
 10. Click to change the operator from Divide to Subtract.
 11. Save the calculated metric and add it to the Marketing Channels Report.
 
-**image here**
+*image here*
 
 This shows all online orders that each channel participated in but was not the last-touch channel. 
 
