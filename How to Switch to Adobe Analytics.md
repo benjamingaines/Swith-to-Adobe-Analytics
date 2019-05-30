@@ -82,7 +82,7 @@ To create a **Page Performance** visualization in Analysis Workspace:
 
 1. Click **Workspace** at the top left of the Analytics screen.
 1. Click the blue **Create New Project** button. 
-1. For your project, you can use a Template Project or a Blank Project. A blank project is a blank canvas you use to build your visualization. A template is a set of pre-configured reports, components, and visualizations. [Templates are helpful starting points](https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/starter_projects.html) for building larger dashboards or analyses, and to help others see your insights more quickly. If your organization has an existing template, you can click that and explore the details that follow. Otherwise, click select the **Content Consumption-Web** template and then click **Create**. 
+1. For your project, you can use a Template Project or a Blank Project. A blank project is a blank canvas you use to build your visualization. A template is a set of pre-configured reports, components, and visualizations. [Templates are helpful starting points](https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/starter_projects.html) for building larger dashboards or analyses, and to help others see your insights more quickly. If your organization has an existing template, you can click that and explore the details that follow. Otherwise, select the **Content Consumption-Web** template and then click **Create**. 
 
 *Template selection image here*
 
