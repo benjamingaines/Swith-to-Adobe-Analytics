@@ -420,9 +420,9 @@ You can import lookup tables of metadata (data about your data) to a dimension i
 
 This is a powerful and often underutilized feature, but do not be intimidated. If you can use a pivot table, you can grasp the concept quickly. Speak with your Analytics administrator to understand what you have available to you, since your implementation is highly customized to your business.
 
-## You are ready to switch
+## Helpful Tips
 
-You now have a good understanding of how to replicate your most essential reporting in Adobe Analytics. Adobe is eager to hear your feedback and continue the conversation. 
+This section provides instructions for some of the most useful and most common actions for working with Adobe Analytics.
 
 ## Saving and socializing your report
 
@@ -452,64 +452,18 @@ Click **Share** > **Send File Now** to email this to recipients. To email on a r
 
 ### Manage shared reports
 
-Before long, you will need to manage the reports that you are sharing with others (or that others are sharing with you). Go to Components > Projects to manage your dashboards, to do things Delete, Share, or Tag in Bulk.
+To manage reports that you are sharing with others (or that others are sharing with you), click **Components** > **Projects**. You can manage your dashboards, or Delete, Share, or Tag in Bulk.
 
-## Bonus Calculated Metrics!
 
-This lab is about migrating to Adobe Analytics tools from other platforms. We had 90 minutes. We couldn't possibly cover everything—we barely scratched the surface.
+### Assisted (last click conversions) calculated metric
 
-We tried to focus on "lowest common denominator" knowledge and workflows that we hope are relevant to the greatest number of participants, and we have tried to shine lights on a number of concepts that you can explore further. We apologize that we couldn't cover everything you'd like to learn about – there is more that we would have loved to share with you!
+An Assisted/Last Click Online Orders metric can be useful to understand at a glance whether a traffic channel (or other dimension value) is more likely to close a sale or to contribute earlier in the user’s conversion path (assist in a sale). It is a helpful way of quantifying a channel’s likelihood to open, close, or participate in a sale (or other conversion type).
 
-As special thanks for sticking around, here are a few Calculated Metric exercises that didn’t quite make the final cut. We’ve tried to be as explicit about how to build these as possible so that you can easily replicate these within your organization!
+1. Open the Calculated Metric Builder and then drag **Order Assists (Report Participation)** and **Online Orders** into the builder. Set the metric type to **Numeric**, with two decimal places. Your new Calculated Metric should look like this:
 
-### “Assisted / Last Click Conversions” Calculated Metric
+When the value of this Calculated Metric is between 1 and 0, the channel is more likely to close than to assist. The closer to 0 this is, the more this is true. If it is 1 exactly, the channel is equally likely to either assist or close. If it is greater than 1, the channel is more likely to assist than close. The further away from 1 it is, the more likely it is to assist. This is similar to other analytics definitions.
 
-An “Assisted/Last Click Online Orders” metric can be useful to understand at a glance whether a traffic channel (or other dimension value) is more likely to close a sale or to contribute earlier in the user’s conversion path (assist in a sale). It’s that one on the Google Analytics Assisted Conversion report that most marketers tend to focus on, since it’s a great way of quantifying a channel’s likelihood to open, close, or participate in a sale (or other conversion type).
 
-Open up the Calculated Metric Builder, then drag and drop “Order Assists (Report Participation)” and “Online Orders” into the builder. Set the metric type to Numeric, with two decimal places. Your new Calculated Metric should look like this:
+## You are ready to switch
 
-![48](./images/image48.png)
-
-On a report, the metric looks like this:
-
-![49](./images/image49.png)
-
-When the value of this Calculated Metric is between 1 and 0, the channel is more likely to close than to assist. The closer to 0 this is, the more that is true. If it’s 1 on-the-dot, the channel is equally likely to either assist or close. If it’s greater than 1, the channel is more likely to assist than close. The further away from 1 it is, the more likely it is to assist. Yes, this aligns with Google’s definition.
-
-### “Visits with Product Views” Calculated Metric
-
-Remember when we mentioned that Calculated Metrics were really powerful, that they included the ability to do much more beyond basic arithmetic? Let’s create a metric for “Visits with Product Views” that will work similarly to how Product View Goals in Google Analytics work: simply counting the number of visits that included a Product View.  
-  
-Start by clicking to open the Calculated Metric Builder to create a Calculated Metric from scratch. Name this “Visits with Product Views.”
-
-This is going to sound counter-intuitive, but now let’s also create a Segment directly within the Calculated Metric – you can do that directly from within the left rail! You could technically build the Segment first, then build the Calculated Metric … but more often than not, we forget to build the segment first (and sometimes there are ways to get around needing a segment altogether). So, we have committed to always creating the Segment after opening the blank metric in our workflow!
-
-![50](./images/image50.png)
-
-Name this new segment “Product View Instances”, add Product Views to the segment definition, change the criteria to “exists”, and ensure that the scope is set to “Hit.” Click Save to continue.
-
-![51](./images/image51.png)
-
-Now, from the left rail within the Calculated Metric Builder, find the segment “Product View Instances” that you just built. This will be in blue. Drag and drop it into the Calculated Metric definition. Your screen should look like this:
-
-![52](./images/image52.png)
-
-Find the Visits metric from the left rail and drop it into the segment. Your screen should look like this:
-
-![53](./images/image53.png)
-
-Click Save, then add the new Calculated Metric to a report and revel in your work.  
-
-![54](./images/image54.png)
-
-As you might have already guessed, this can be helpful when we’re looking to understand which channels are most likely to generate *qualified* visits – that is to say, most likely to generate visits that are at least looking at products.
-
-You could read the above like: “of the 75K visits from Email, 23K viewed products. There were 41K total views of products generated from Emails.”
-
-### “Product View Rate” Calculated Metric
-
-If you suspected that “Visits with Product Views” might be a good way to start to look at the conversion funnel on a Channel-by-Channel basis, then you are probably also interested in creating an index metric to show the percentage of total visits from each channel to look at products.  
-  
-By this point, we’ve gone through all the steps required to create this “Product View Rate” metric. See if you can create this on your own!  
-  
-You should be able to gut-check that this is correct by dividing “Product View Visits” by “Visits” manually. Remember: gut-checking everything that you create in Analysis Workspace (no matter how simple it seems) is a must!
+You now have a good understanding of how to replicate your most essential reporting in Adobe Analytics. Adobe is eager to hear your feedback and continue the conversation. 
