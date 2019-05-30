@@ -25,11 +25,11 @@ You can read and learn from this guide with no special requirements. However, to
 1. Access to an instance of Analysis Workspace with sufficient privileges to create and share segments and calculated metrics
 1. Administrator or developer help, in some cases, to fully implement your Adobe Analytics account.
 
+Make sure that your Analytics is fully implemented with web properties.
+
 ## Get started in Adobe Analytics
 
 To get started in Adobe Analytics:
-
-Make sure that your Analytics is fully implemented with web properties.
 
 1. [Log in to Adobe Experience Cloud](https://marketing.adobe.com/resources/help/en_US/analytics/getting-started/analytics-navigation.html).
   
