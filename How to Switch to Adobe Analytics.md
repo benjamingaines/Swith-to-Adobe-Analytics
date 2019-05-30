@@ -108,7 +108,7 @@ For more information on report suites, see the [Report Suites Manager](https://m
 
 ### Using Workspace toolbars
 
-Analysis Workspace includes three toolbars that appear according to the icon you select on the far left of the screen.*
+Analysis Workspace includes three toolbars that appear according to the icon you select on the far left of the screen.
 
 *Toolbar icons image here*
 
@@ -144,7 +144,7 @@ If you click the drop down arrow on the panel, it collapses to show other panels
 
 ### Understanding Content Reports
 
-This section describes elements in the page performance visualization (entitled **Top Pages** in this template). Refer to the following image to understand the details of the report.
+To understand the elements in the page performance visualization (entitled **Top Pages** in this template), refer to the following image:
 
 *Pages report image here*
 
