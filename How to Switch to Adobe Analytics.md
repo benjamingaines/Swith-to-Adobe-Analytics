@@ -332,283 +332,125 @@ The instructions also include:
 
 ### Analyze product performance for desktop visitors
 
+To find product performance for desktop visitors:
+
+1. Find the **Desktop Visitors** [segment](https://marketing.adobe.com/resources/help/en_US/analytics/segment/seg_overview.html) in the **Components** toolbar.
+2. Preview the segment definition by clicking the info icon in the component. Hover over component to see an **i** icon appear in the right corner. Click this icon to open a preview of the segment definition, including a graph of how many visits, visitors, and page views are included in this segment. The **Desktop Visitors** segment uses the criteria `Mobile Device Type = Other`. 
+3. Drag **Desktop Visits** to the top of the panel
+
+The top left side of the panel shows a segment that is already applied to this report. This segment filters data for just website (excluding mobile app) visits. When you apply two segments to a report, Adobe Analytics shows only data that matches both criteria. This should result in a product performance report filtered for Desktop visitors only.
+
 ***About unspecified rows***
 
 On some reports you may see a row labeled **Unspecified**, or **None**. You can ignore these rows, generally. Adobe likes to give you all data for every metric on your report, even if there's no associated dimension value for it. This is to provide context for your data. For example, if a Products report contains a metric such as **Occurrences** on it and it shows  **Unspecified**, this might reflect actions on a site that did not involve a product. But if **Unspecified** shows up getting credit for product views or cart additions, that may be an implementation issue.
 
+### Analyze conversion fallout from category pages
 
-1. Find the **Desktop Visitors** [segment](https://marketing.adobe.com/resources/help/en_US/analytics/segment/seg_overview.html) in the **Components** toolbar.
+A Fallout Report in Adobe Analytics is a dynamic visualization showing how many visits or visitors complete specific actions in sequence. The most common example is an eCommerce conversion funnel: how many people view products, add items to their cart, begin checkout, and purchase. But fallout reports can also show how people go through sequences of pages or page types, or how visitors engage with different campaigns and channels.
 
-    > **What's a Segment?**<br><br>
-    > A segment lets you filter a report by something that's not on that report. For instance, you could apply a segment to a Products report to show only mobile device activity, even though nothing on the Products report tells you about device type.<br><br>
-    > Similar to the calculated metrics engine, Adobe's segmentation engine is head-spinningly advanced compared to what other tools can do. We don't have time to dig too deeply into it today, but we strongly recommend taking the time to learn more about it!
+To analyze fallout with the eCommerce Conversion Funnel, scroll to find the Product Conversion Funnel Report.
 
-2. Preview the segment definition by clicking the info icon in the component.
+After scrolling down to find the Product Conversion Funnel report, you might try to compare the data here against the Products Performance Report. You might notice that they do not match. The Product Performance Report shows the total number of Product Views, Cart Additions, and Online Orders. By contrast, the fallout visualization shows the total number of *visitors* who viewed products, the total number of *visitors* who added items to their cart after viewing products, and the total number of visitors who bought products online after having viewed products and adding items to their cart.  
 
-3. When you hover over the component, you’ll see an “i” icon appear in the right corner. Clicking this icon will open a preview of the segment definition, including a graph of how many visits, visitors, and page views are included in this segment.
+The fallout visualization enforces sequence and deduplicates. The freeform table does neither.
 
-    The Desktop Visitors segment uses the criteria “Mobile Device Type = Other”. Mobile Device Type? Other? There are legacy reasons for these labels – just remember that “Mobile Device Type” is the dimension to use for measuring desktop vs mobile performance, and that “Other” represents Desktop visits.
+Fallout reports are also helpful because you are not limited to using either metrics or dimensions in your step definitions. You can use both together.
 
-    ![31](./images/image31.png)
+To take a closer look at the fallout from Product Category (Product Browse Grid) pages:
 
-### Drag and drop “Desktop Visits” to the top of the panel
 
-You’ll see at the top left side of the panel that there is already a segment applied to this report, to filter data for just website (excluding mobile app) visits. *When you apply two segments to a report, Adobe Analytics shows only data that matches both criteria*.
+1. Click the **Page Type** dimension.
+1. Hover over the dimension and click into the right-facing arrow that appears.
+1. On the menu that appears, click the dimension value most appropriate. The menu shows the most common Page Type values in the last six months. You can use these dimension values the same way that you can use Segments, Dimensions, and Metrics in the report.
+1. Find **Category** and then drag and drop this on top of the **Product Views exist** step. Your report should appear as follows:
 
-![32](./images/image32.png)
+*Image here*
 
-When you’re done, you’ll get a report that looks like this: easy-peasy, a product performance report filtered for Desktop visitors only.
+To see all visitors who go to Category pages and the product fallout from those pages:
 
-![33](./images/image33.png)
+1. Change Container from Visitor to Visit Scope. By default, this shows you the path of Unique Visitors and includes All Visits as the first touchpoint.   
+1. To changed the default, click the gear icon in the upper right-hand corner of the Fallout report. This opens the Fallout Settings.
+1. Toggle the container from Visitor to Visit to show the total number of visits that go through your sequence during a single visit, instead of the total number of visitors who go through your sequence during the report timeframe. 
 
-As expert web analysts, we hope that your first instinct when viewing this report is to use index metrics and/or start to look at the conversion funnel fallout. For the sake of having fun, let’s take a step back and look at the overall site-wide conversion funnel using a “fallout report.”
+For Category Page Fallout, you can change this to be **Visit** scoped.
 
-## Exercise 3.2: Analyze Conversion Fallout from Category Pages
-
-A Fallout Report in Adobe Analytics is a dynamic visualization showing how many visits or visitors complete specific actions in sequence. The classic example is an eCommerce conversion funnel – how many people view products, add items to their cart, begin checkout, and purchase. But fallout reports can also show how people go through sequences of pages or page types, or how visitors engage with different campaigns & channels.
-
-To stay consistent, we’ll continue to look at the eCommerce Conversion Funnel.
-
-### Scroll to find the Product Conversion Funnel Report
-
-When you’ve scrolled down to find the Product Conversion Funnel report, you might try to compare the data here against the Products Performance Report. When you do that, you might notice that they don’t match at all. There’s a reason for that.
-
-![34](./images/image34.png)
-
-The Product Performance Report shows the total number of Product Views, Cart Additions, and Online Orders. By contrast, the fallout visualization shows the total number of *visitors* who viewed products, the total number of *visitors* who added items to their cart after viewing products, and the total number of visitors who bought products online after having viewed products and adding items to their cart.  
+To start funnel at Category Visits, in the same settings menu, un-check the opton box for `Show All Visits` as the first touchpoint. This removes the bar at the start of the funnel that shows you the total number of Visits/Visitors, making the first step of your sequence Category Page Visits.  
   
-In short: the fallout visualization enforces sequence and deduplicates. The freeform table does neither. Wield your power carefully!
+*image*
 
-Fallout reports are also great because you aren’t limited to using either metrics or dimensions in your step definitions – you can use *both* together. See – you *can* have it both ways! Let’s take a closer look at the fallout from Product Category (Product Browse Grid) pages.
+### Cart abandonment segments
 
-### Find the Page Type Dimension in the Left Rail
+The Adobe Experience Cloud makes it simple to turn segments in Analytics into Audiences in other Adobe Marketing Cloud solutions, where you can craft personalized and relevant experiences based on the user’s web behavior. 
 
-### Click into the Page Type dimension
+To create a segment of visitors who have added products to their cart but not placed an order and then send it to the Experience Cloud:
 
-1. Once you’ve found Page Type in the left rail, don’t drag and drop quite yet – hover over the dimension and click into the right-facing arrow that appears.
+1. Open the Segment Builder.
+1. From the **Components** toolbar, scroll down to the **Segments** and click the plus icon to create a new segment. 
+1. Name the segment and add criteria for Visits that abandon a cart.
+1. Name your segment `Cart Abandonment Visits`.
+1. Search for `Abandon Cart` in the **Components** search box. Adobe includes an **Abandon Cart** segment template for you to use as a starting point. These templates are identified by the folder-with-magnifying-glass icons. This template matches the need to show visits that added an item to their cart and then did not place an order.
+1. Drag the component into the segment definition. It should appear like this:
 
-2. This is going to open a menu of the most common Page Type values in the last six months. You can use these dimension values the same way that you can use Segments, Dimensions, and Metrics in the report. My, that’s convenient.
+*image here*
 
-    ![35](./images/image35.png)
+### Save segments and share it with Experience Cloud
 
-3. Find “Category”, then drag and drop this on top of the “Product Views exist” step.  
+To save the segment and share it with Experience Cloud:
+
+1. Select the check box option under the segment definition. In the suggested look-back window, specify 90 days.
+1. Click save. This shares an audience across Adobe Experience Cloud solutions. You can now use this to trigger emails in Campaign, show banner ads via Ad Cloud, or trigger a personalized offer the next time the visitor comes to your site via Target.
+
+### Exclude fraud using virtual report suites
+
+A Virtual Report Suite (VRS) is a view that is built from normal report suite data, with one or more segments permanently applied. They can be applied retroactively to past data, or you can update the segment to filter certain events in the past.
+
+You can use a VRS to eliminate bot traffic that you did not previously catch, or to throw out online orders that were either fraudulent or had a currency conversion issue.
+
+Consider setting up a VRS from initial implementation and using it continually, even if initially you are not filtering anything out. Then, if issues arise over time, you can add a segment to that VRS and you will not have to retrain others on switching report suites or finding segments/calculated metrics in a different suite.
+
+### Integrate offline data using Data Import
+
+Data Source import allows you to push offline data, such as cancelled orders and lead-to-revenue info, back to Adobe.
+
+To get the most out of this feature, make sure to capture an online transaction ID at the time of the online conversion. Then, you can batch upload offline data referencing that same transaction ID and the new data associates with the online activity related to that transaction.
+
+### Roll up/clean up dimension data using Classifications
+
+You can import lookup tables of metadata (data about your data) to a dimension in Adobe Analytics. This is useful with Products. If your site tracks products by their SKU and the SKU 04852291147 is selling very well, you can upload a table translating that SKU into a product name, department, brand, or price point. Then you can pull a product name report, or a brand report.
+
+This is a powerful and often underutilized feature, but do not be intimidated. If you can use a pivot table, you can grasp the concept quickly. Speak with your Analytics administrator to understand what you have available to you, since your implementation is highly customized to your business.
+
+## You are ready to switch
+
+You now have a good understanding of how to replicate your most essential reporting in Adobe Analytics. Adobe is eager to hear your feedback and continue the conversation. 
+
+## Saving and socializing your report
+
+This section describes some standard options to store and distribute Analysis Workspace Projects.
+
+### Save your project
+
+On the Project menu, click **Save.** This saves the project in your account and you can come back to it whenever you would like. It is not shared with any other users unless you explicitly grant them access.
+
+If you have not already named your project, you are promted to do this upon saving.
+
+### Share this report with other Adobe Analytics users
+
+Under the **Share** menu in the light-grey header, you can share with individual users and user groups (if you have set groups up).  
   
-    ![36](./images/image36.png)
+### Point users directly to a specific report
 
-4. Stellar. If all has gone well, your report will look like this:
+To save other users from having to scroll through a list of projects, you can send users short links that drop users directly into a specific report. To generate a short link, click **Share** > **Get Project Link**. Use it and send it to others to make your report easy to find. 
 
-    ![37](./images/image37.png)
+### Download a report
 
-Now, you’re going to see all visitors who go to Category pages, and the product fallout from those pages. Fantastic! Let’s customize this bad-boy even further.
-
-### Change Container from Visitor to Visit Scope
-
-Remember when we said that by default, this is going to show you the path of Unique Visitors and include All Visits as the first touchpoint? We can change that.  
+Instead of taking screenshots, you can export your project as a PDF and send it to your recipient. Click **Project** > **Download PDF**.
   
-1. In the upper right-hand corner of the Fallout report, there is a gear icon. Click it to open the Fallout Settings.
+### Email a report once or regularly
 
-2. Toggling the container from Visitor to Visit will show the total number of *visits* that go through your sequence during a single visit, instead of the total number of *visitors* who go through your sequence during the report timeframe. For Category Page Fallout, let’s change this to be **Visit** scoped.
+Click **Share** > **Send File Now** to email this to recipients. To email on a recurring basis, click **Send File On Schedule** Check to make sure that your date range is dynamic when you set recurring reports, otherwise you will receive the same date range every time it sends.  
 
-### Start Funnel at Category Visits
-
-In the same settings menu, there is an option to un-check a box for “Show ‘All Visits’ as the first touchpoint.” This removes the bar at the very start of the funnel that shows you the total number of Visits/Visitors, making the first step of your sequence Category Page Visits.  
-  
-![38](./images/image38.png)
-
-You can read this report like: of the 35K visits to the category pages, 86% view products and 33% ultimately place an order within the visit. Wow that’s an effective website. Let’s move on.
-
-![39](./images/image39.png)
-
-## Exercise 3.3: Cart Abandonment Segments
-
-The Adobe Experience Cloud makes it dead simple to turn segments in Analytics into Audiences in other Adobe Marketing Cloud solutions, where you can craft personalized and relevant experiences based on user’s web behavior. Let’s create a segment of visitors who have added products to their cart but not placed an order, and send it to the Experience Cloud.
-
-### Open the Segment Builder
-
-1. From the left rail, scroll down to the “Segments” and click the plus icon to create a new segment. Did we mention there’s a keyboard shortcut for that? There is! Hats off to you if you commit this to memory and actually use it.
-
-### Name the Segment & Add Criteria for Visits that Abandon a Cart
-
-1. Name your segment “Cart Abandonment Visits,” or something along those lines.
-
-2. Do a search for “Abandon Cart” in the left rail. Adobe has included an “Abandon Cart” segment template for you to use as a starting off point – templates like this are identified by the folder-with-magnifying-glass icons. Lucky for us, this template is exactly what we need with no customization required: visits that added an item to their cart and then did not place an order.
-
-3. Drag and drop the blue component into the segment definition. It will look like this:
-
-    ![40](./images/image40.png)
-
-### Save the Segment and Share to Experience Cloud
-
-OK – Buckle up and prepare to send this to the Experience Cloud.
-
-1. Underneath the segment definition, there’s a check-box. Check the box. Adobe will suggest a look-back window for you; let’s keep 90 days for these purposes.
-
-    ![41](./images/image41.png)
-
-2. Click save. And with that, you’ll feel the ground moving under your feet – you’ve just shared an audience across Adobe Experience Cloud solutions. Now you can use this to trigger emails in Campaign, show banner ads via Ad Cloud, or trigger a personalized offer the next time the visitor comes to your site via Target.
-
-We don't want to make your head spin too much more on this Thursday morning. But in passing we do want to highlight a couple of relevant features in Adobe that may come in handy for conversion funnel and products analysis: Virtual Report Suites, Data Sources, and Classifications.
-
-## Next Steps
-
-### Exclude Fraud Using Virtual Report Suites
-
-A Virtual Report Suite is a view that's built from a normal report suite's data, with one or more segments permanently applied. One really nice thing about them is that they are fully retroactive—you can update the segment and filter out stuff that already happened.
-
-Two ways we often use a VRS are to eliminate bot traffic that you didn't catch before the fact, and to throw out online orders that were either fraudulent or had a currency conversion issue (Indonesian Rupiah, I'm looking at you).
-
-> **PRO TIP:** If you're just implementing Adobe Analytics now, consider setting up a VRS from the get-go and using it all the time, even if initially you're not filtering anything out. Then, if issues do arise over time, you can add a segment to that VRS and you won't have to retrain stakeholders on switching report suites or finding segments/calculated metrics in a different suite.
-
-### Integrate Offline Data using Data Import
-
-Another underappreciated feature of Adobe Analytics is the Data Source import. This lets you push offline data such as cancelled orders and lead-to-revenue info back to Adobe.
-
-> **PRO TIP:** To get the most out of this feature, make sure to capture an online transaction ID at the time of the online conversion. Then, you can batch upload offline data referencing that same transaction ID and the new data will associate with the online activity related to that transaction. It's vaguely magical.
-
-### Roll Up/Clean Up Dimension Data using Classifications
-
-While we're looking at product data, this is a good time to talk about *classifications*. You're old enough. This is a way to import lookup tables of meta data (that means "data about your data") to a dimension in Adobe Analytics.
-
-Products are a classic example of where this is useful. Let's say my site tracks products by their SKU. I see SKU 04852291147 is selling like hotcakes. Great. But I don't know what product that is.
-
-Classifications let me upload a table translating that SKU into a product name, department, brand, price point, what have you. Now I can pull a product name report, or brand report.
-
-This is a powerful and often underutilized feature of Adobe Analytics. Don't be intimidated—check it out. Anybody who has ever used a pivot table can grasp the concept in about 30 seconds.
-
-This is where we highly recommend speaking with your Analytics administrator to understand exactly what you have available to you, since this will be highly customized to your business.
-
-# Closing: Congratulations!
-
-You did it! By this point, you should have a good understanding of how to replicate your most essential reporting in your new home, and how to level up these reports using features unique to Adobe Analytics. The world is your oyster – go forth and analyze.
-
-We hope we have managed to impart useful information to you in this short time, and we hope this workbook will help you retain what you learned and point your way to additional resources that can expand your knowledge. We are eager to hear your feedback and continue the conversation! Please visit the Forum page; we'll be keeping our eyes out for your comments and would love to chat with you about how to get Adobe Analytics working better for your organization. It's what we do!
-
-David Sprinkle<br>
-Chief Analytics Officer, Acronym<br>
-<dsprinkle@acronym.com>
-
-Janelle Olmer<br>
-Director, Digital Analytics, Acronym<br>
-<jolmer@acronym.com><br>
-\#measure Slack: jeolmer
-
-*Acronym has been helping brands design, deploy, maximize, and maintain their digital analytics infrastructure since 2008. Our analytics practice is made up of certified experts with extensive experience in all major tools including Adobe Analytics, Target, DTM, Launch, Media Optimizer and Ad Cloud. We have been an Adobe Solution Partner since 2012.*
-
-# Appendix
-
-## Key Concepts
-
-Here's a basic primer on some core concepts and terms we've used during this lab. For more info, Adobe's built-in help documentation is pretty good. You can search it from anywhere in Analytics by clicking the "?" icon in the top right of the interface:
-
-![42](./images/image42.png)
-
-- **Dimensions and Metrics –** Every report includes at least one dimension and one metric. Metrics *count*, while dimensions *describe*. Another way to think about it is that dimensions are usually words, while metrics are always numbers.  
-
-  For example, if you're looking at report showing how much revenue you generated in each US state, "state" is the dimension and "revenue" is the metric. Simple enough! Depending on where you're looking, Adobe sometimes called dimensions "variables" or "breakdowns" to keep you on your toes.
-
-- **Traffic metrics vs. Conversion metrics –** This is kind of a legacy thing but it still crops up some places. Traffic metrics count the things you know just by having Adobe's global code on your site: page views, visits, time spent, entries, exits, bounces, and visitors.  
-
-  Conversion metrics indicate a visitor did something you care about—like filling out a form, checking loan rates, or buying something. These are specific to your business, so they will vary with each implementation.
-
-- **Traffic dimensions**, sometimes called "props" for technical reasons, are a type of dimension that only lets you put traffic metrics on the report. If you're deploying a new implementation, we don't recommend using these except in a few special circumstances. They suck.
-
-- **Conversion dimensions**, sometimes called "eVars" because of the Illuminati + technical reasons, let you put both traffic and conversion metrics on the same report. These are better. Use these instead. One key feature of conversion dimensions is that they can "remember" values after they're set, for a customizable amount of time.  
-
-  This is similar to the concept of "scope" for custom dimensions in GA, but you can customize the persistence with more flexibility in Adobe. For instance, you might want a campaign code to persist for 7 days and get credit for all downstream activity during that time. Or, you might want to define a video name when the video is first played and then expire it when the video is complete.  
-
-  Conversion dimensions have a few other important settings, like attribution and the undeservedly dreaded merchandising settings, but you'll have to look those up yourself.
-
-- **Events** – An "event" is Adobe's term for a conversion metric. It is, simply, a Thing That Happened. This is very different from a GA event, which is a thing that happened that includes both dimensional (Category, Action, Label) and metrical data (Total Events, Unique Events, Value).  
-
-  Adobe events can be configured to either just count up +1 each time something happens (equivalent to "total events" in GA), or only count once per visit (equivalent to "unique events" in GA), or only count once ever using a technique called *serialization* (which GA can't even manage to do for purchases, for some reason).
-
-  > **PRO TIP:** Most of the time, events will be set up to count every time something happens. When setting up a new event, we strongly recommend specifying if this is not the case in either the event name or description (e.g., "Visits w/Article View").
-
-- **Page Names** – Most analytics tools rely on URLs to identify pages. Adobe can certainly report on URLs (though not by default, FYI), but prefers to rely on a concept called Page Names that lets you provide more user-friendly customized names for each page.  
-
-  This can be handy if you change your URLs for SEO purposes, but want historical continuity in your reports; or, if dynamic URL parameters create multiple unique URLs for the same page. It can be a little daunting to figure out a Page Name strategy when you first launch, but the time is worth it.
-
-  > **PRO TIP:** Many organizations rely on their URLs to some degree to define Page Names. That's fine, but also keep in mind that one benefit of Page Names is the ability to maintain a consistent value in Analytics even if the URL of the page changes. Try to keep that in mind when designing your implementation—for instance, maybe copy your URLs into a separate field in your CMS when you first deploy and then make sure that field stays the same if you change the visible URL for the page.
-
-- **Server Calls vs. Page Views –** As you may already know, what you pay Adobe for Analytics is based on something called server calls. A server call is simply a "ping" from your site or app to Adobe's servers—it's you sending data to them. The more data you want them to store and crunch, the more resources they have to commit, so the more they charge you. Fair enough.  
-
-  Server calls are not always the same thing as page views. Some things you want to track really shouldn't count as a page view: for example, video views; clicks on a download link; expanding a "more info" accordion; interacting with a mortgage calculator widget.  
-
-  In Adobe-speak, these interactions are called "non-page view server calls". (The product marketing team was unfortunately away on a team building retreat the day that name was decided.) More technically, a page view is an "s.t call", while the other thing is an "s.tl call". This is roughly equivalent to page vs. event calls in GA.
-
-  It's important to understand that both types of server calls exist and affect your overall server call quota, because in some cases you may have a lot of non-page view server calls on your site or app. (This is *especially* true for mobile apps.) Total server calls is not a default metric, so make sure you look at the billing logs instead of relying on a page views report to keep tabs on your usage and avoid unpleasant surprises.
-
-- **Serialization –** For key flows on your site, like your main conversion funnel, it may be important for analysis to be able to deduplicate how many times a person hits each step. Sites with shopping carts or multi-step forms may allow visitors to return later and pick up where they left off.
-
-  In addition to letting you build visit- and visitor-based metrics around this (i.e. "unique carts"), which can deduplicate for a single device, Adobe has a feature called *serialization* that lets you send a unique ID for each cart/application/etc. that Adobe will use to deduplicate any conversion event, across all devices, forever. This is pretty dang cool.
-
-  > **PRO TIP:** Not sure if you should serialize or not? You have 1,000 events to play with—set up one group of events that's serialized and one that's not, and figure it out later.
-
-## Key Metric Definitions
-
-- **Page Views** – Pretty much all tools call these page views (or pageviews). So hey, you already know that one!
-
-- **Visits** – Similar to Sessions in GA. A series of pings to Adobe from a browser, which ends if there is 30 minutes of inactivity. Note that unlike in GA, a new visit does not trigger if the visitor re-enters the site from a new traffic source during their visit.
-
-- **Unique Visitors** – People, or to be more precise unique visitor ID cookies. Similar to Users in GA. You may also see metrics with names like "Daily Unique Visitors" or "Monthly Unique Visitors" in places other than Analysis Workspace; generally, ignore these. They're mostly a legacy thing and they're more confusing than helpful in most circumstances.
-
-- **Entries** **& Exits** –The first and last value recorded *for that dimension* during a visit. These can get a little tricky! Just because it was the first or last value for that dimension doesn't mean it happened on the first or last page view of a visit.
-
-  On the Pages report, these work about how you'd expect, because you send a page name on every page view. But don't freak out by putting Exits on a search terms report and think everybody searching for "blue jeans" immediately bailed. It just means that was the last search term during the visit.
-
-- **Bounce Rate** – Bounces divided by Entries. Note that Adobe does not have the concept of a "non-interaction event" (though it would be a lot cooler if they did), so if you're tracking an automatic popup on your homepage or an auto-playing video, those won't count as bounces. There's another metric called *single page visits* you can use to correct for this kind of thing.  
-
-  If you’re comparing your Bounce Rate in AA against Bounce Rate in GA, chances are your Bounce Rate in AA is lower. That’s because “Bounce” visits in GA exclude visits who only viewed one page and triggered non-interaction events; in AA, “bounces” exclude visits who viewed one page and triggered additional events. If you want to compare apples to apples, compare GA Bounces and AA Single Page Visits.
-
-- **Instances** – The number of times that value was sent to Adobe, either as part of a page view or a "non page view server call", such as a tracked link click. Some tools call this "hits." We actually use this one a lot.
-
-- **Occurrences** – Don't use Occurrences. It's stupid and confusing, and yet it's the default metric in Workspace. Just tell everyone to kill it with extreme prejudice and save yourself.
-
-## Saving and Socializing Your Report
-
-We hope that over the course of this lab, we’ve given you good ideas on how to use Adobe Analytics to analyze and report on your website & app data. If you are fearful of having to recreate reports in Workspace every time you want to look at them, or if you are fearful of having to teach users how to recreate reports themselves … fear not! Let’s run through a few of the standard options to store and distribute Analysis Workspace Projects.
-
-### Save your project!
-
-Even if you don’t want to distribute your report, you do not have to replicate your work every time you want to look at it.
-
-Go to Project menu and click “Save.” (I bet there's a keyboard shortcut for this, too.) This means that the project is saved in your account and you can come back to it whenever you would like. It is not shared with any other users unless you explicitly grant them access.
-
-If you haven’t already, you’ll be asked to name your project. Projects tend to accumulate, so use something memorable and unique like “David’s Nifty Page Contribution Report – Adobe Summit 2019.”
-
-### Share this report with other Adobe Analytics users.
-
-Tell the world! Underneath the “Share” menu in the light-grey header, you can share with individual users and user groups (if you've set groups up).  
-  
-![43](./images/image43.png)
-
-### Point Users Directly to *This Specific Report*
-
-Before long, you will probably have many projects in Analysis Workspace – some that have been shared with you and some that you have created yourself. Instead of scrolling through a list of projects or pointing colleagues to do the same, we often send users short links that will drop users directly into the report that we’re looking at. Unfortunately, copying the browser URL doesn’t work.  
-  
-To generate a short link, go to Share > Get Project Link. It doesn’t look like much, but these things are great. We use these short links *all the time*.  
-  
-![44](./images/image44.png)  
-  
->**PRO TIP:** If you're presenting data in a presentation, put the short link back to the report in the slide comments to make it easy to pull the same data again next quarter or to pull it up during that meeting where your boss doesn't believe you.
-
-### Download This Report
-
-We have come to terms with the fact that not everybody will necessarily log in to Adobe to view our handiwork. Instead of taking screenshots, you can export this project as a PDF and your recipient will be able to experience this report in its full glory. Go to Project > Download PDF. Make a mental note of the hotkey and reassure yourself that you will definitely remember it next time.  
-  
-![45](./images/image45.png)
-
-### Email this Report (Once or on a Recurring Basis!)
-
-Head on back to the Share menu. Click Send File Now to email this to recipients once, or click Send File On Schedule to send on a recurring basis.  
-  
->**PRO TIP:** Check to make sure that your date range is dynamic (“Rolling”) when you set recurring reports, otherwise you’ll receive the same date range every time it sends. **  
-  
-![46](./images/image46.png)
-
-![47](./images/image47.png)
-
-### Manage Shared Reports
+### Manage shared reports
 
 Before long, you will need to manage the reports that you are sharing with others (or that others are sharing with you). Go to Components > Projects to manage your dashboards, to do things Delete, Share, or Tag in Bulk.
 
