@@ -37,9 +37,9 @@ To get started in Adobe Analytics:
 
 ## Analytics visual tools
 
-Adobe Analytics provides two different visual tools to analyze your business: Analysis Workspace and Reports and Analytics. In Analysis Workspace, you work with visualizations that correspond to reports in different tools. These visualizations show key metrics for your web business. The visualizations are not only more flexible and robust in displaying metrics, they are also easier to create. They also provide much more detail than traditional reports. You create visualizations by dragging and dropping data tables, dimensions, metrics, segments, and time periods on the Analysis Workspace user interface. 
+Adobe Analytics provides two different visual tools to analyze your business: Analysis Workspace and Reports & Analytics. In Analysis Workspace, you work with visualizations that correspond to reports in different tools. These visualizations show key metrics for your web business. The visualizations are not only more flexible and robust in displaying metrics, they are also easier to create. They also provide much more detail than traditional reports. You create visualizations by dragging and dropping data tables, dimensions, metrics, segments, and time periods on the Analysis Workspace user interface. 
 
-You can also extend visualizations with right-click options. For more information on the features of Analysis Workspace visualizations, see the [Analysis Workspace Overview](https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/). Adobe's Reports and Analytics capabilities also correspond with report types in other tools. Both tools offer unique capabilities that go beyond simply measuring page traffic so that you can better understand how pages convert users. 
+You can also extend visualizations with right-click options. For more information on the features of Analysis Workspace visualizations, see the [Analysis Workspace Overview](https://marketing.adobe.com/resources/help/en_US/analytics/analysis-workspace/). Adobe's Reports & Analytics capabilities also correspond with report types in other tools. Both tools offer unique capabilities that go beyond simply measuring page traffic so that you can better understand how pages convert users. 
 
 ## Site content reports
 
